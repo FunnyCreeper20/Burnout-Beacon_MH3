@@ -1,0 +1,3682 @@
+<link rel="stylesheet" type="text/css" href="https://tboi.com/assets/main.css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <div id="gameParent" style="text-align: center;">
+        <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="https://trapjawws.github.io/josh/The%20Binding%20of%20Isaac.swf" width="1000" height="572">
+            <param name="movie" value="https://trapjawws.github.io/josh/The%20Binding%20of%20Isaac.swf">
+            <param name="quality" value="high">
+            <param name="play" value="true">
+            <param name="loop" value="true">
+            <param name="wmode" value="window">
+            <param name="scale" value="showall">
+            <param name="menu" value="true">
+            <param name="devicefont" value="false">
+            <param name="salign" value="">
+            <param name="allowScriptAccess" value="false">
+        </object>
+
+
+<p>chat sorry idk how to center it 😭🙏</p>
+<div class="search">
+      	      	<form action="#">
+        	<input class="search-input" type="text" autocomplete="off" placeholder="Search anything!" autofocus>
+          </form>
+
+          <div class="option-expander"></div>
+          <div class="option-container">
+          	<!-- <ul class="options-show">
+              	<li class=""><h3>Show:</h3></li>
+                  <label class="">Items<input type="checkbox" name="section_items" id="item-check" checked></label>
+                  <label class="">Trinkets<input type="checkbox" name="section_trink" id="trinket-check" checked></label>
+                  <label class="last-item ">Cards<input type="checkbox" name="section_cards" id="card-check" checked></label>
+                  <li><h3>Night Mode:</h3></li>
+                  <label>On<input type="radio" name="night" id="night-on" checked onclick="sC('night','on',360)"></label>
+                  <label>Off<input type="radio" name="night" id="night-off" onclick="sC('night','off',360)"></label>
+              </ul> -->
+              <ul class="options-show ">
+              	<li><h3>Sort:</h3></li>
+                  <label id="iid-label">Item ID<div class="itemid-hoverdiv" style="display:none">The same order as the in-game collection page</div><input type="radio" name="sort" id="itemid" onclick="sC('sort','id',360)" checked></label>
+                  <label class="last-item">Colour<input type="radio" name="sort" id="colour" onclick="sC('sort','co',360)"></label>
+                  <li><h3>Filter Style:</h3></li>
+                  <label>Remove<input type="radio" name="filter" id="remove" checked onclick="sC('filter','r',60)"></label>
+                  <label>Fade<input type="radio" name="filter" id="fade" onclick="sC('filter','f',60)"></label>
+              </ul>
+          </div>
+					      </div>
+	</div>
+</header>
+<div class="main">
+
+<div class="items-container flex-container">
+	<h2>Items</h2>
+<li class="textbox" data-tid="128" data-sid="1" >
+	<a><div onclick="" class='item vitem itm1'></div>
+    <span>
+    <p class="item-title">The Sad Onion:</p>
+    <p class="itemid">(ItemID: 1)</p>
+    <p class="special">Special Item</p>
+    <p>+0.7 Tears Up.</p>
+	
+    <p class="tags">* sad, crying, onion, green, white, stat up, stats, item room, treasure room, golden chest, passive item, tears up, upgrade item, special item</p>
+    </span>
+    </a>
+</li>
+
+
+<li class="textbox" data-tid="62" data-sid="2">
+	<a><div onclick="" class='item vitem itm2'></div>
+    <span>
+    <p class="item-title">The Inner Eye:</p>
+    <p class="itemid">(ItemID: 2)</p>
+    <p class="special">Special Item</p>
+    <p>Tears now shoot three at a time (Triple shot).</p>
+    <p>Tears down significantly: (delay = delay * 2.1 + 3).</p>
+    <p>This essentially lowers your tear rate by about 2 tears per second.</p>
+    <p>Due to how this item is applied in the source code, this is a very rare case where the order in which you take items does actually matter. Taking Inner Eye and Polyphemus in different orders will yield different results.</p>
+    <p class="tags">* white, blue, black, tear modifier, item room, treasure room, eyeball, passive item, upgrade item, special item</p>
+    </span>
+    </a>
+</li>
+
+
+<li class="textbox" data-tid="140" data-sid="3">
+	<a><div onclick="" class='item vitem itm3'></div>
+    <span>
+    <p class="item-title">Spoon Bender:</p>
+    <p class="itemid">(ItemID: 3)</p>
+    <p class="special">Special Item</p>
+    <p>Gives the player homing shots.</p>
+    <p class="tags">* silver, spoon, grey, gray, bent, tear modifier, item room, treasure room, passive item, upgrade item, special item</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="80" data-sid="4">
+	<a><div onclick="" class='item vitem itm4'></div>
+    <span>
+    <p class="item-title">Max's Head:</p>
+    <p class="itemid">(ItemID: 4)</p>
+    <p class="special">Special Item</p>
+    <p>+0.5 Damage.</p>
+    <p>x1.5 damage multiplier (does not stack with the multipliers that Book of Belial with Blood of the Martyr and Magic Mushroom give).</p>
+    <p>Gives shots a significant knockback effect.</p>
+    <p class="tags">* dead dog, dog head, brown, item room, treasure room, passive item, damage up, upgrade item, special item</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="102" data-sid="5">
+	<a><div onclick="" class='item vitem itm5'></div>
+    <span>
+    <p class="item-title">My Reflection:</p>
+    <p class="itemid">(ItemID: 5)</p>
+    <p class="special">Special Item</p>
+    <p>Gives tears a boomerang effect.</p>
+    <p>Synergises well with the Lump of Coal item, due to the fact that items stay airborne longer.</p>
+    <p class="tags">* cracked mirror, grey, gray, item room, treasure room, passive item, upgrade item, special item</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="104" data-sid="6">
+	<a><div onclick="" class='item vitem itm6'></div>
+    <span>
+    <p class="item-title">Number One:</p>
+    <p class="itemid">(ItemID: 6)</p>
+    <p class="special">Special Item</p>
+    <p>+1.5 Tears Up.</p>
+    <p>Range Down (-13 Range).</p>
+    <p>You essentially end up with an extremely high fire rate but a very low tear range.</p>
+    <p>Picking up this item turns any identified 'Range Down' pills into 'Rangе up' pills.</p>
+    <p class="tags">* stat up, stats, item room, treasure room, passive item, urine, pee, stat down, yellow, tears up, upgrade item, special item</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="11" data-sid="7">
+	<a><div onclick="" class='item vitem itm7'></div>
+    <span>
+    <p class="item-title">Blood of The Martyr:</p>
+    <p class="itemid">(ItemID: 7)</p>
+    <p class="special">Special Item</p>
+    <p>+1 Damage.</p>
+    <p>Adds a x1.5 damage multiplier ONLY if the player also has The Devil Card/Bооk of Belial effect (does not stack with the multipliers that Max's Head and Magic Mushroom give).</p>
+    <p>Can appear in the Angel Room.</p>
+    <p class="tags">* stat up, stats, item room, treasure room, passive item, brown, angel room, god room, crown, thorns, damage up, upgrade item, special item</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="22" data-sid="8">
+	<a><div onclick="" class='item vitem itm8'></div>
+    <span>
+    <p class="item-title">Brother Bobby:</p>
+    <p class="itemid">(ItemID: 8)</p>
+    <p class="special">Special Item</p>
+    <p>A familiar which follows the player and shoots tears with 3.5 damage.</p>
+    <p>An item commonly found in the Devil Room.</p>
+    <p class="tags">*   item room, treasure room, passive item, familiar, devil room, devil deal, blue, baby, upgrade item, special item</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="132" data-sid="9">
+	<a><div onclick="" class='item vitem itm9'></div>
+    <span>
+    <p class="item-title">Skatole:</p>
+    <p class="itemid">(ItemID: 9)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>All fly enemies are no longer aggressive towards the player.</p>
+    <p>1/13 chance to see this item appear from the shell game, with a further 1/3 chance to win it (1/3 chance becomes 1/2 with the Lucky Foot).</p>
+    <p class="tags">* fly love, arcade, shell game, red, black, grey, gray, poop, passive item</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="58" data-sid="10">
+	<a><div onclick="" class='item vitem itm10'></div>
+    <span>
+    <p class="item-title">Halo of Flies:</p>
+    <p class="itemid">(ItemID: 10)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Gives the player two orbital flies which will circle the player, block incoming shots and damage any fly-type enemies on contact.</p>
+    <p class="tags">* fly, orbital, grey, gray, black, item room, treasure room, block, protection, passive item</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="1.1" data-sid="11">
+	<a><div onclick="" class='item vitem itm11'></div>
+    <span>
+    <p class="item-title">1UP:</p>
+    <p class="itemid">(ItemID: 11)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Gives the player an extra life.</p>
+    <p>Item found in the Secret Room item pool.</p>
+    <p class="tags">* extra life, green, white, mario, secret room, mushroom, follower, passive item</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="78" data-sid="12">
+	<a><div onclick="" class='item vitem itm12'></div>
+    <span>
+    <p class="item-title">Magic Mushroom:</p>
+    <p class="itemid">(ItemID: 12)</p>
+    <p class="special">Special Item</p>
+    <p>+1 Health Up.</p>
+    <p>+0.3 Damage.</p>
+    <p>+0.3 Player Speed Up.</p>
+    <p>+7.75 Range Up (Base range = 23).</p>
+    <p>Adds a x1.5 damage multiplier (does not stack with the multipliers that Book of Belial with Blood of the Martyr and Max's Head give).</p>
+    <p>Full heal.</p>
+    <p>Does not increase the tear rate stat.</p>
+    <p>Increases tear and player size, but does not affect the size of the hitbox.</p>
+    <p class="tags">* all stats up, red, speed up, white, mario, item room, treasure room, passive item, follower, stats, stat up, damage up, upgrade item, special item</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="190.5" data-sid="13">
+	<a><div onclick="" class='item vitem itm13'></div>
+    <span>
+    <p class="item-title">The Virus:</p>
+    <p class="itemid">(ItemID: 13)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Deals 30 poison damage per tick on contact with enemies and applies a poison effect which ticks 3 times for 3.5 damage.</p>
+    <p>-0.1 Player Speed Down.</p>
+    <p>The -10% speed from this item does not stack with the speed down from the Thick Odd Mushroom.</p>
+    <p>25% chance to drop from the Lust mini boss.</p>
+    <p class="tags">* syringe, injection, red, stat down, stats, passive item, treasure room, item room, poison touch</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="122" data-sid="14">
+	<a><div onclick="" class='item vitem itm14'></div>
+    <span>
+    <p class="item-title">Roid Rage:</p>
+    <p class="itemid">(ItemID: 14)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>+0.6 Player Speed Up.</p>
+    <p>This item is falsely labelled as range stat up.</p>
+    <p class="tags">* syringe, injection, green, stat up, stats, passive item, treasure room, item room</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="1" data-sid="15">
+	<a><div onclick="" class='item vitem itm15'></div>
+    <span>
+    <p class="item-title"><3:</p>
+    <p class="itemid">(ItemID: 15)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>+1 Health Up.</p>
+    <p>Full Heal.</p>
+    <p>25% chance to drop from the Gluttony mini boss.</p>
+    <p class="tags">* heart, ballchinian, red, stats, stat up, passive item, treasure room, item room</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="118" data-sid="16">
+	<a><div onclick="" class='item vitem itm16'></div>
+    <span>
+    <p class="item-title">Raw Liver:</p>
+    <p class="itemid">(ItemID: 16)</p>
+    <p class="special">Special Item</p>
+    <p>+2 Health Up.</p>
+    <p>Full Heal.</p>
+    <p>This item does not decrease your range, contrary to what other sources claim.</p>
+    <p>This item is only found in the Secret Room item pool.</p>
+    <p class="tags">* brown, stats, stat up, passive item, secret room, shiny, upgrade item, special item</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="133" data-sid="17">
+	<a><div onclick="" class='item vitem itm17'></div>
+    <span>
+    <p class="item-title">Skeleton Key:</p>
+    <p class="itemid">(ItemID: 17)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>+99 Keys.</p>
+    <p class="tags">* grey, gray, silver, skull, passive item, bone, treasure room, item room, shiny, max</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="3" data-sid="18">
+	<a><div onclick="" class='item vitem itm18'></div>
+    <span>
+    <p class="item-title">A Dollar:</p>
+    <p class="itemid">(ItemID: 18)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>+99 Coins.</p>
+    <p>Can only drop when breaking Slot Machines.</p>
+    <p class="tags">* money, dosh, green, bucks, penny, max, passive item, slot machine, arcade, gamble, rich</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="19" data-sid="19">
+	<a><div onclick="" class='item vitem itm19'></div>
+    <span>
+    <p class="item-title">Boom!:</p>
+    <p class="itemid">(ItemID: 19)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>+10 Bombs.</p>
+    <p class="tags">* explosive, explode, black, grey, gray, fuse, ten, face, smiley, passive item, treasure room, item room, arena, challenge room</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="189" data-sid="20">
+	<a><div onclick="" class='item vitem itm20'></div>
+    <span>
+    <p class="item-title">Transcendence:</p>
+    <p class="itemid">(ItemID: 20)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Gives the player the ability to fly.</p>
+    <p>Has a 2/3 chance to be in the Secret Room item pool for each game.</p>
+    <p class="unlock">UNLOCK: Unlock this item by defeating Mom's Heart for a second time.</p>
+    <p class="tags">* flying, noose, rope, brown, secret room, passive item, unlockable item,    </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="29.6" data-sid="21">
+	<a><div onclick="" class='item vitem itm21'></div>
+    <span>
+    <p class="item-title">The Compass:</p>
+    <p class="itemid">(ItemID: 21)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Shows all icons on the map (Treasure room, shop, boss room etc.)</p>
+    <p>Does not show the layout of the map itself.</p>
+    <p>The map icons do not show if the current floor has the 'Curse of Darkness' effect.</p>
+    <p class="tags">*   , passive, north, south, east, west, reveal, treasure room, item room, arena, challenge room, white, red, brown, yellow,     </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="76" data-sid="22">
+	<a><div onclick="" class='item vitem itm22'></div>
+    <span>
+    <p class="item-title">Lunch:</p>
+    <p class="itemid">(ItemID: 22)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>+1 Health Up.</p>
+    <p class="tags">* boss room, dogs dinner, dog food, grey, gray, passive item, stat up, stats, max, treasure room, item room</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="42" data-sid="23">
+	<a><div onclick="" class='item vitem itm23'></div>
+    <span>
+    <p class="item-title">Dinner:</p>
+    <p class="itemid">(ItemID: 23)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>+1 Health Up.</p>
+    <p class="tags">* boss room, dogs dinner, dog food, grey, gray, passive item, stat up, stats, treasure room, item room</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="41" data-sid="24">
+	<a><div onclick="" class='item vitem itm24'></div>
+    <span>
+    <p class="item-title">Dessert:</p>
+    <p class="itemid">(ItemID: 24)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>+1 Health Up.</p>
+    <p class="tags">* boss room, dogs dinner, dog food, passive item, stat up, stats, treasure room, item room</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="20" data-sid="25">
+	<a><div onclick="" class='item vitem itm25'></div>
+    <span>
+    <p class="item-title">Breakfast:</p>
+    <p class="itemid">(ItemID: 25)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>+1 Health Up.</p>
+    <p class="tags">* boss room, milk, white, yellow, passive item, stat up, stats, treasure room, item room, carton, container</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="124" data-sid="26">
+	<a><div onclick="" class='item vitem itm26'></div>
+    <span>
+    <p class="item-title">Rotten Meat:</p>
+    <p class="itemid">(ItemID: 26)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>+1 Health Up.</p>
+    <p class="tags">* boss room, bone, food, brown, green, white, passive item, stat up, stats, treasure room, item room</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="195" data-sid="27">
+	<a><div onclick="" class='item vitem itm27'></div>
+    <span>
+    <p class="item-title">Wooden Spoon:</p>
+    <p class="itemid">(ItemID: 27)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>+0.3 Player Speed Up.</p>
+    <p class="tags">* passive, brown, stats, stat up, cultery, cooking, treasure room, item room, boss room, gold chest drop</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="8.8" data-sid="28">
+	<a><div onclick="" class='item vitem itm28'></div>
+    <span>
+    <p class="item-title">The Belt:</p>
+    <p class="itemid">(ItemID: 28)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>+0.3 Player Speed Up.</p>
+    <p class="tags">* passive, brown, stats, stat up, buckle, treasure room, item room, boss room, gold chest drop</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="93" data-sid="29">
+	<a><div onclick="" class='item vitem itm29'></div>
+    <span>
+    <p class="item-title">Mom's Underwear:</p>
+    <p class="itemid">(ItemID: 29)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>+7.75 Range Up (Base range = 23).</p>
+    <p class="tags">* passive, coral, pink, red, stats, stat up, pants, knickers, treasure room, item room, boss room, gold chest drop</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="88" data-sid="30">
+	<a><div onclick="" class='item vitem itm30'></div>
+    <span>
+    <p class="item-title">Mom's Heels:</p>
+    <p class="itemid">(ItemID: 30)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>+7.75 Range Up (Base range = 23).</p>
+    <p class="tags">* passive, pink, red, stats, stat up, shoes, treasure room, item room, boss room, gold chest drop</p>
+    <p class="tags">* </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="90" data-sid="31">
+	<a><div onclick="" class='item vitem itm31'></div>
+    <span>
+    <p class="item-title">Mom's Lipstick:</p>
+    <p class="itemid">(ItemID: 31)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>+7.75 Range Up (Base range = 23).</p>
+    <p class="tags">* passive, pink, red, grey, gray, makeup, stats, stat up, treasure room, item room, boss room</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="194" data-sid="32">
+	<a><div onclick="" class='item vitem itm32'></div>
+    <span>
+    <p class="item-title">Wire Coat Hanger:</p>
+    <p class="itemid">(ItemID: 32)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>+0.7 Tears Up.</p>
+    <p class="tags">* passive, black, clothes, stats, stat up, boss room, tears up</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="9.5" data-sid="33">
+	<a><div onclick="" class='item vitem itm33'></div>
+    <span>
+    <p class="item-title">The Bible:</p>
+    <p class="itemid">(ItemID: 33)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Gives the player angel wings and the ability to fly for the current room.</p>
+    <p>Instantly kills Mom's Foot and Mom's Heart.</p>
+    <p>Can instantly kill the player if used on the Satan, Isaac or ??? boss fights.</p>
+    <p>Can appear in the Angel Room.</p>
+    <p>Recharge Time: 6 Rooms.</p>
+	<p>Synergies: Habit, 9 Volt, The Battery</p>
+    <p class="tags">* active item, spacebar item, brown, jesus, religion, cross, crucifix, book, angel room, shop,        </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="16.6" data-sid="34">
+	<a><div onclick="" class='item vitem itm34'></div>
+    <span>
+    <p class="item-title">The Book of Belial:</p>
+    <p class="itemid">(ItemID: 34)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>+2 Damage.</p>
+    <p>Adds a x1.5 damage multiplier ONLY if the player has 'Blood of the Martyr'.</p>
+    <p>Gives a 25% higher chance to spawn a Devil Room while holding this item.</p>
+    <p>Starting as Judas with the Book of Belial will give you the extra chance for a devil room but will not increase your chance of seeing a library.</p>
+    <p class="unlock">UNLOCK: Unlock this item by defeating the Mom's Heart boss fight for the first time.</p>
+    <p>Recharge Time: 3 Rooms.</p>
+    <p class="tags">*   devil room, devil deal, active item, spacebar item, book, grey, gray, dark, demon, stats, stat up, tear modifier, damage up</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="102.6" data-sid="35">
+	<a><div onclick="" class='item vitem itm35'></div>
+    <span>
+    <p class="item-title">The Necronomicon:</p>
+    <p class="itemid">(ItemID: 35)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Deals 40 damage to all enemies in current the room.</p>
+    <p>An item commonly found in the Devil Room.</p>
+    <p class="unlock">UNLOCK: Unlock this item by using 4 Death Tarot Cards (Doesn't have to be in the same run).</p>
+    <p>Recharge Time: 6 Rooms.</p>
+    <p class="tags">*   devil room, devil deal, active item, spacebar item, book, brown, dark, unlockable item</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="112.5" data-sid="36">
+	<a><div onclick="" class='item vitem itm36'></div>
+    <span>
+    <p class="item-title">The Poop:</p>
+    <p class="itemid">(ItemID: 36)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Drops a poop on the floor.</p>
+    <p>The poop can be used to block enemies and has a chance to drop pickups (i.e. coins, hearts), just like normal poops can.</p>
+    <p>The ??? character starts with this item.</p>
+    <p class="unlock">UNLOCK: Unlock this item by defeating the Mom's Heart boss fight ten times.</p>
+    <p>Recharge Time: 1 Rooms.</p>
+    <p class="tags">* brown, shiny, active item item, spacebar item item, shit, turd, feces, item room, treasure room</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="97" data-sid="37">
+	<a><div onclick="" class='item vitem itm37'></div>
+    <span>
+    <p class="item-title">Mr. Boom:</p>
+    <p class="itemid">(ItemID: 37)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Drops a large bomb below the player which does 110 damage.</p>
+    <p>25% chance to drop from the Wrath mini boss.</p>
+    <p>Recharge Time: 2 Rooms.</p>
+    <p class="tags">* smiley, active item item, spacebar item item, grey, gray, black, fuse, explosive, explosion, item room, treasure room</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="147" data-sid="38">
+	<a><div onclick="" class='item vitem itm38'></div>
+    <span>
+    <p class="item-title">Tammy's Head:</p>
+    <p class="itemid">(ItemID: 38)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Fires 10 tears in a circle around the player.</p>
+    <p>Can be found in Golden Chests.</p>
+    <p>Recharge Time: 1 Rooms.</p>
+    <p class="tags">* dead cat head, white, whiskers, active item item, spacebar item item, sad, golden chest, gold chest, item room, treasure room</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="84" data-sid="39">
+	<a><div onclick="" class='item vitem itm39'></div>
+    <span>
+    <p class="item-title">Mom's Bra:</p>
+    <p class="itemid">(ItemID: 39)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Freezes all enemies in the room for 5 seconds.</p>
+    <p>Recharge Time: 3 Rooms.</p>
+    <p class="tags">* white, brasier, underwear, white, active item item, spacebar item item, item room, treasure room</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="66" data-sid="40">
+	<a><div onclick="" class='item vitem itm40'></div>
+    <span>
+    <p class="item-title">Kamikaze:</p>
+    <p class="itemid">(ItemID: 40)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Causes an explosion near the player which damages all enemies in close proximity for 40 damage per use. The explosion makes the player take 1 heart of damage.</p>
+    <p>There is a known glitch with this item where if the player hugs a wall and uses it, they won't take damage but the explosion will still occur.</p>
+    <p>Recharge Time: Instant.</p>
+    <p class="tags">* active item, spacebar item, instant recharge, red white, clock, explosive, suicide, jihad, clock, time bomb, treasure room, item room</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="91" data-sid="41">
+	<a><div onclick="" class='item vitem itm41'></div>
+    <span>
+    <p class="item-title">Mom's Pad:</p>
+    <p class="itemid">(ItemID: 41)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Causes all enemies to flee from the player for a short time.</p>
+    <p>Recharge Time: 3 Rooms.</p>
+    <p class="tags">* active item, spacebar item item, white, grey, gray, sanitary towel, treasure room, item room</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="15" data-sid="42">
+	<a><div onclick="" class='item vitem itm42'></div>
+    <span>
+    <p class="item-title">Bob's Rotten Head:</p>
+    <p class="itemid">(ItemID: 42)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>A poison bomb which can be thrown to cause 53.5 damage (as well as another hit equal to one tear of damage) to enemies and leaves a poison effect on the enemy, doing 7 damage per tick.</p>
+    <p>Damage done from this item is affected by items which increase your damage stat, much like how damage scales with Ipecac and Dr. Fetus.</p>
+    <p>Tear modifying effects such as My Reflection and Spoon Bender will affect the behaviour of Bob's Rotten Head.</p>
+    <p>25% chance to drop from the Sloth mini boss.</p>
+    <p>Recharge Time: 3 Rooms.</p>
+    <p class="tags">* active item, spacebar item item, green, explosive, treasure room, item room</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="152" data-sid="44">
+	<a><div onclick="" class='item vitem itm44'></div>
+    <span>
+    <p class="item-title">Teleport!:</p>
+    <p class="itemid">(ItemID: 44)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Teleports the player to a random room.</p>
+    <p>This item can now teleport you to the <i>I AM ERROR</i> room as of the 1.666 update.</p>
+    <p>Recharge Time: 2 Rooms.</p>
+    <p class="tags">* active item, spacebar item item, blue, remote, button, treasure room, item room, challenge room, arena room, itaku, itaco</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="197" data-sid="45">
+	<a><div onclick="" class='item vitem itm45'></div>
+    <span>
+    <p class="item-title">Yum Heart:</p>
+    <p class="itemid">(ItemID: 45)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Heals the player for one whole heart.</p>
+    <p>Maggy starts with this item.</p>
+    <p>14.3% chance to drop from the Super Lust mini boss.</p>
+    <p class="unlock">UNLOCK: Unlock this item by having 7 heart containers in a single playthrough.</p>
+    <p>Recharge Time: 4 Rooms.</p>
+    <p class="tags">* active item, spacebar item item, red, item room, treasure room</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="74" data-sid="46">
+	<a><div onclick="" class='item vitem itm46'></div>
+    <span>
+    <p class="item-title">Lucky Foot:</p>
+    <p class="itemid">(ItemID: 46)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>All pills will now have positive or neutral effects.</p>
+    <p>Increases chance to win shell game (55%, up from 33%).</p>
+    <p>Increased chance to win an item from a Demon Beggar (33%, up from 25%).</p>
+    <p>Increased chance to win at a slot machine.</p>
+    <p>Removes the chance to get a fortune from a fortune teller machine (0% down from 65%).</p>
+    <p>Increased chance to get a pickup when clearing a room.</p>
+    <p>In the 1.5 version of the game (Most unholy edition), there is a slight nerf to the Lucky foot effect which gives increased chance of winning at a slot machine.</p>
+    <p class="unlock">UNLOCK: Unlock this item by collecting 55 pennies in one playthrough.</p>
+    <p class="tags">*   devil room, devil deal, pink, passive item item, treasure room, item room</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="44" data-sid="47">
+	<a><div onclick="" class='item vitem itm47'></div>
+    <span>
+    <p class="item-title">Doctor's Remote:</p>
+    <p class="itemid">(ItemID: 47)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>A one time use of Epic Fetus. A target is placed on the floor which can be controlled with the arrow keys or mouse. After several seconds a missile hits the target and does 80 damage to anything within range.</p>
+    <p>You start with this item in the 'The Doctor's Revenge' challenge.</p>
+    <p>Recharge Time: 3 Rooms.</p>
+    <p class="tags">* active item, spacebar item item, black, grey, gray, targeted missile, treasure room, item room</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="33" data-sid="48">
+	<a><div onclick="" class='item vitem itm48'></div>
+    <span>
+    <p class="item-title">Cupid's Arrow:</p>
+    <p class="itemid">(ItemID: 48)</p>
+    <p class="special">Special Item</p>
+    <p>Gives the player piercing shots which will travel through all enemies.</p>
+    <p>Shots will not travel through rocks with this item.</p>
+	<p>Synergies: Polyphemus, Spoon Bender, Sacred Heart</p>
+    <p class="tags">* passive item, upgrade item, special item, red, gray, grey, item room, treasure room</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="130" data-sid="49">
+	<a><div onclick="" class='item vitem itm49'></div>
+    <span>
+    <p class="item-title">Shoop Da Whoop:</p>
+    <p class="itemid">(ItemID: 49)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>One time use of a Brimstone style laser, which can be shot in any direction causing 22 daamge per tick, for up to a maximum of 4 ticks per laser.</p>
+    <p>The Brimstone glitch does not work with this item.</p>
+    <p>Items which increase your damage do not affect this item.</p>
+    <p>25% chance to drop from the Envy mini boss.</p>
+    <p>Recharge Time: 3 Rooms.</p>
+    <p class="tags">* active item, spacebar item item, red, black, meme, face, lazor go pew, treasure room, item room,</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="144" data-sid="50">
+	<a><div onclick="" class='item vitem itm50'></div>
+    <span>
+    <p class="item-title">Steven:</p>
+    <p class="itemid">(ItemID: 50)</p>
+    <p class="special">Special Item</p>
+    <p>+1 Damage.</p>
+    <p>1/6 chance to drop from the 'Steven' boss fight or 100% chance if you already have the 'Little Steve' item.</p>
+    <p>Killing the smaller part of Steven first does not increase the chances for this item to drop.</p>
+    <p>Can also appear in golden chests.</p>
+    <p class="tags">* passive item, damage up, upgrade item, special item, stat up, stats, black, white, boss room, steven boss, golden chest, itzasickscot, sickscot</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="109" data-sid="51">
+	<a><div onclick="" class='item vitem itm51'></div>
+    <span>
+    <p class="item-title">Pentagram:</p>
+    <p class="itemid">(ItemID: 51)</p>
+    <p class="special">Special Item</p>
+    <p>+1 Damage.</p>
+    <p>Adds a 20% chance for a Devil Deal Room to spawn.</p>
+    <p>Adds an extra 10% chance for a Devil Deal Room to spawn if you somehow picked up a second one.</p>
+    <p class="tags">* damage up, upgrade item, special item, red, star, stat up, stats, boss room, passive item</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="45" data-sid="52">
+	<a><div onclick="" class='item vitem itm52'></div>
+    <span>
+    <p class="item-title">Dr. Fetus:</p>
+    <p class="itemid">(ItemID: 52)</p>
+    <p class="special">Special Item</p>
+    <p>Player's shots are now Bombs instead of tears which do 60.5 damage as a base and increase slightly with upgrades in the damage stat.</p>
+    <p>Picking up the Mr. Mega item will turn your bombs into super troll bombs.</p>
+    <p>Picking up the Bobby Bomb item will cause Dr. Fetus bombs to move towards enemies.</p>
+    <p>Augments the item pool with 'Bobby - Bomb' and 'Mr. Mega', adding six of each item.</p>
+    <p class="unlock">UNLOCK: Unlock this item by defeating Mom's Heart for a fifth time.</p>
+    <p class="eternal">ETERNAL MODE: Dr. Fetus will only appear in the item room 1/3 of the time.</p>
+    <p class="tags">* dr fetus, passive item, pink, glass, jar, baby, fetus in a jar, super meat boy, treasure room, item room, upgrade item, special item, unlockable item,  </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="79" data-sid="53">
+	<a><div onclick="" class='item vitem itm53'></div>
+    <span>
+    <p class="item-title">Magneto:</p>
+    <p class="itemid">(ItemID: 53)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Pick-ups on the floor move towards the player.</p>
+    <p class="tags">* passive item, red, magnet, north pole, south pole, item room, treasure room</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="190" data-sid="54">
+	<a><div onclick="" class='item vitem itm54'></div>
+    <span>
+    <p class="item-title">Treasure Map:</p>
+    <p class="itemid">(ItemID: 54)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Reveals the entire map for every floor including the secret room.</p>
+    <p>Does not show icons for any other rooms.</p>
+    <p>The map does not show if the current floor has the 'Curse of Darkness' effect.</p>
+    <p>Item found in the Shop Room item pool.</p>
+    <p class="tags">* passive item, brown, X marks the spot, shop room,       </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="87" data-sid="55">
+	<a><div onclick="" class='item vitem itm55'></div>
+    <span>
+    <p class="item-title">Mom's Eye:</p>
+    <p class="itemid">(ItemID: 55)</p>
+    <p class="special">Special Item</p>
+    <p>Player now also shoots tears out the back of their head.</p>
+	<p>This item is falsely labelled as a tear stat up. The rate of tears coming from the front of Isaac does not increase as a result of picking up this item.</p>
+    <p class="tags">* passive item, red, white, eyeball, moms eye, treasure room, item room, upgrade item, special item</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="67" data-sid="56">
+	<a><div onclick="" class='item vitem itm56'></div>
+    <span>
+    <p class="item-title">Lemon Mishap:</p>
+    <p class="itemid">(ItemID: 56)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Creates a pool of yellow 'lemonade' on the floor for 5 seconds which damages any enemies which come in contact with it rapidly for 8 damage per tick.</p>
+    <p>Recharge Time: 2 Rooms.</p>
+    <p class="tags">* active item, spacebar item, yellow, lemonade, bladder, urine, pee, treasure room, item room</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="43" data-sid="57">
+	<a><div onclick="" class='item vitem itm57'></div>
+    <span>
+    <p class="item-title">Distant Admiration:</p>
+    <p class="itemid">(ItemID: 57)</p>
+    <p class="special">Special Item</p>
+    <p>Gives the player an attack fly which orbits Isaac at a wider radius than normal orbiting items and deals damage to any enemies which come in contact with it.</p>
+    <p>The Distant Admiration fly does 5 damage per tick and does not scale with damage stat upgrades.</p>
+    <p class="tags">* familiar, passive item, grey, gray, treasure room, item room, upgrade item, special item</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="18" data-sid="58">
+	<a><div onclick="" class='item vitem itm58'></div>
+    <span>
+    <p class="item-title">Book of Shadows:</p>
+    <p class="itemid">(ItemID: 58)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Gives the player an invulnerability effect for 300 frames (10 seconds) on use.</p>
+    <p>This item can allow the player to take free deals with the devil which are on sale for three Soul hearts, if the invulnerability effect is used.</p>
+    <p>Recharge Time: 3 Rooms.</p>
+	<p>Synergies: Habit, 9 Volt, The Battery, The Virus, Ipacec, IV Bag, Mom's Knife</p>
+    <p class="tags">* active item, spacebar item, white, book, library, treasure room, item room</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="193" data-sid="59">
+	<a><div onclick="" class='item vitem itm59'></div>
+    <span>
+    <p class="item-title">Wiggle Worm:</p>
+    <p class="itemid">(ItemID: 59)</p>
+    <p class="special">Special Item</p>
+    <p>Tears now move in a wave fashion across the screen.</p>
+    <p>+0.4 Tears Up.</p>
+    <p class="tags">* passive item, blue, snake, treasure room, item room, stats, stat up, tears up, upgrade item, special item</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="66.5" data-sid="60">
+	<a><div onclick="" class='item vitem itm60'></div>
+    <span>
+    <p class="item-title">The Ladder:</p>
+    <p class="itemid">(ItemID: 60)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Allows the player to walk over gaps with a width of one tile.</p>
+    <p>Found in the Shop Room item pool.</p>
+    <p class="tags">* passive item, brown, bridge, shop room, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="27" data-sid="62">
+	<a><div onclick="" class='item vitem itm62'></div>
+    <span>
+    <p class="item-title">Charm of the Vampire:</p>
+    <p class="itemid">(ItemID: 62)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Heals the player for 1/2 a heart after every 13 enemies killed.</p>
+	<p>Synergies: X-ray Vision, Ipacec</p>
+    <p class="tags">* passive item, black, bat, vampiric, face, grey, gray, treasure room, item room</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="8.5" data-sid="63">
+	<a><div onclick="" class='item vitem itm63'></div>
+    <span>
+    <p class="item-title">The Battery:</p>
+    <p class="itemid">(ItemID: 63)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Gives the player one extra charge of their spаcebar item after every 15 seconds spent in a hostile room (where the doors are shut) up to a total of three charges.</p>
+    <p>Using a spаcebar item will reset the charge counter, meaning an extra three charges can be achieved per room (A total of six).</p>
+    <p>Found in the Shop Room item pool.</p>
+    <p class="tags">* passive item, brown, gray, grey, recharge, shop room, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="142" data-sid="64">
+	<a><div onclick="" class='item vitem itm64'></div>
+    <span>
+    <p class="item-title">Steam Sale:</p>
+    <p class="itemid">(ItemID: 64)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Lowers the price of all items in the shop by 50%, rounded down to the nearest whole number.</p>
+    <p>The item becomes useless after The Depths/Necropolis 2, due to the fact that there are no shops after this point.</p>
+    <p>25% chance to drop from the Greed mini boss.</p>
+    <p class="tags">* passive item, red, white, 50% off, steam sale, gaben, coupon, ticket, shop room</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="7" data-sid="65">
+	<a><div onclick="" class='item vitem itm65'></div>
+    <span>
+    <p class="item-title">Anarchist's Cookbook:</p>
+    <p class="itemid">(ItemID: 65)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Spawns six troll bombs at random locations around the room, which do 40 damage and will damage the player if in range of an explosion.</p>
+    <p>25% chance to drop from the Pride mini boss.</p>
+    <p>Recharge Time: 3 Rooms.</p>
+	<p>Synergies: Habit, 9 Volt, Battery, Bob's Curse, Bobby-Bomb, Mr-Mega</p>
+	<p>DO NOT PICK UP MAGNETO WITH ANARCHIST COOKBOOK</p>
+    <p class="tags">* active item, spacebar item, red, white, book, treasure room, library, item room</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="60.5" data-sid="66">
+	<a><div onclick="" class='item vitem itm66'></div>
+    <span>
+    <p class="item-title">The Hourglass:</p>
+    <p class="itemid">(ItemID: 66)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Slows all enemies and their projectiles in the current room.</p>
+    <p>Can cause 'The Fallen' boss to split into four parts if used when the boss hits 50%.</p>
+    <p>Recharge Time: 2 Rooms.</p>
+    <p class="tags">* active item, spacebar item, yellow, brown, sand, hourglass, timer, treasure room, item room</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="131" data-sid="67">
+	<a><div onclick="" class='item vitem itm67'></div>
+    <span>
+    <p class="item-title">Sister Maggy:</p>
+    <p class="itemid">(ItemID: 67)</p>
+    <p class="special">Special Item</p>
+    <p>A familiar which follows the player and shoots red tears.</p>
+    <p>An item commonly found in the Devil Room.</p>
+    <p>Sister Maggy's tears do 5 damage each and do not scale with damage stat upgrades.</p>
+    <p class="tags">*   passive item, familiar, red, treasure room, item room, devil room, devil deal, upgrade item, special item</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="149" data-sid="68">
+	<a><div onclick="" class='item vitem itm68'></div>
+    <span>
+    <p class="item-title">Technology:</p>
+    <p class="itemid">(ItemID: 68)</p>
+    <p class="special">Special Item</p>
+    <p>The player's tears are now a laser shot with unlimited range, which only fire at right angles.</p>
+    <p>Shots travel through enemies but not rocks in the environment.</p>
+    <p>The Lump of Coal item simply gives +2 static damage for Technology.</p>
+    <p>This item has a number of interesting synergies. Having either Ipecac, The Inner Eye, Mutant Spider or Polyphemus will increase damage by a factor of three.</p>
+    <p class="tags">*    passive item, tear modifier, red, white, treasure room, item room, devil room, devil deal, upgrade item, special item</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="29" data-sid="69">
+	<a><div onclick="" class='item vitem itm69'></div>
+    <span>
+    <p class="item-title">Chocolate Milk:</p>
+    <p class="itemid">(ItemID: 69)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>The player can now charge shots by holding down the arrow key and shots will therefore no longer automatically fire.</p>
+    <p>Tear Delay = delay * 0.8. (20% Tears Stat Increase)</p>
+    <p>The tears up from Chocolate Milk can exceed the max tear rate.</p>
+    <p>It will now be necessary to rapidly press buttons to fire tears at the highest possible rate.</p>
+    <p>A fully charged shot is equivalent to +7.8 damage.</p>
+    <p class="tags">* passive item, brown, glass, treasure room, item room, tear modifier</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="51" data-sid="70">
+	<a><div onclick="" class='item vitem itm70'></div>
+    <span>
+    <p class="item-title">Growth Hormones:</p>
+    <p class="itemid">(ItemID: 70)</p>
+    <p class="special">Special Item</p>
+    <p>+1 Damage.</p>
+    <p>+0.4 Player Speed Up.</p>
+    <p class="tags">* passive item, purple, syringe, injection, drugs, treasure room, item room, challenge room, item room, damage up, upgrade item, special item</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="82" data-sid="71">
+	<a><div onclick="" class='item vitem itm71'></div>
+    <span>
+    <p class="item-title">Mini Mushroom:</p>
+    <p class="itemid">(ItemID: 71)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>+0.3 Player Speed Up.</p>
+    <p>+3.25 Range Up (Base range = 23).</p>
+    <p>Shrinks the player sprite size.</p>
+    <p class="tags">* passive item, blue, spotty, treasure room, item room</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="123" data-sid="72">
+	<a><div onclick="" class='item vitem itm72'></div>
+    <span>
+    <p class="item-title">Rosary:</p>
+    <p class="itemid">(ItemID: 72)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Gives the player three soul hearts.</p>
+    <p>Augments the shop item pool, adding 7 instances of 'The Bible' item.</p>
+    <p>Picking up this item will show a message saying "Faith Up" in the bottom corner. Faith up is NOT an actual stat within the game and does not increase your chance of a God Room.</p>
+    <p class="tags">* passive item, red, chain, treasure room, item room,     </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="32" data-sid="73">
+	<a><div onclick="" class='item vitem itm73'></div>
+    <span>
+    <p class="item-title">Cube of Meat:</p>
+    <p class="itemid">(ItemID: 73)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>This item drops every time after defeating Famine, Pestilence, War or Death.</p>
+    <p>A single cube of meat will give the player an orbital which block shots and damage anything it comes into contact with for 7 damage per tick.</p>
+    <p>Picking up a second cube of meat turns it into a floating meat head which shoots red tears for 5 damage, does 7 damage on contact and blocks incoming shots.</p>
+    <p>A third cube of meat turns the head into a small meat boy who walks around and damages enemies for base damage (3.5) but no longer shoots projectiles.</p>
+    <p>A fourth and final cube of meat increases the meat boy's size and damage (5.5 damage).</p>
+    <p>Any further cubes of meat obtained will restart the process starting with a new orbital cube.</p>
+    <p class="tags">* passive item, red, shiny, super meat boy, boss room</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="5" data-sid="74">
+	<a><div onclick="" class='item vitem itm74'></div>
+    <span>
+    <p class="item-title">A Quarter:</p>
+    <p class="itemid">(ItemID: 74)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>+25 Coins.</p>
+    <p>14.3% chance to drop from the Super Greed mini boss.</p>
+    <p class="unlock">UNLOCK: Unlock this item by defeating Mom's Heart for a fourth time.</p>
+    <p class="tags">*   passive item, gray, grey, shiny coin, devil room, devil deal, unlockable item</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="110" data-sid="75">
+	<a><div onclick="" class='item vitem itm75'></div>
+    <span>
+    <p class="item-title">PhD:</p>
+    <p class="itemid">(ItemID: 75)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>All pills now have a positive or neutral effect.</p>
+    <p>Has a 1/150 chance to identify a pill every frame (30 times per second).</p>
+    <p>Causes the blood donation machine to drop an extra coin.</p>
+    <p>PhD also removes the chance for any unidentified pills to become telepills. Pills which are already identified as telepills will not be affected.</p>
+    <p>Heals two hearts of health.</p>
+    <p class="tags">* passive item, white, paper, certificate, treasure room, item room</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="196" data-sid="76">
+	<a><div onclick="" class='item vitem itm76'></div>
+    <span>
+    <p class="item-title">X-Ray Vision:</p>
+    <p class="itemid">(ItemID: 76)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Reveals the entrance to both the Secret room and the super-secret room. This item also automatically opens the hole, removing the need for bombs to enter.</p>
+    <p class="tags">* pink, black, passive item, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="101" data-sid="77">
+	<a><div onclick="" class='item vitem itm77'></div>
+    <span>
+    <p class="item-title">My Little Unicorn:</p>
+    <p class="itemid">(ItemID: 77)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Gives the player temporary invincibility and damages enemies upon contact for 40 damage each tick.</p>
+    <p>Recharge Time: 6 Rooms.</p>
+	<p>Synergies: Mom's Knife, Technology 2</p>
+    <p class="tags">* active item, spacebar item, white</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="17" data-sid="78">
+	<a><div onclick="" class='item vitem itm78'></div>
+    <span>
+    <p class="item-title">Book of Revelations:</p>
+    <p class="itemid">(ItemID: 78)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Adds one Soul heart upon use.</p>
+    <p>Increases the chance for a Devil Deal Room to spawn by 35% while held.</p>
+    <p>If you use the Book of Revelations and you are on a non-XL floor in the Womb or before, you will get one of the four horsemen as your boss.</p>
+    <p class="unlock">UNLOCK: Unlock this item by defeating any of the horsemen boss fights.</p>
+    <p>Recharge Time: 6 Rooms.</p>
+	<p>Synergies: Habit, 9 Volt, The Battery, The Wafer, X-ray Vision</p>
+	<p>With the Wafer, Isaac becomes invincible</p>
+    <p class="tags">* active item, spacebar item, unlockable item, grey, gray, brown,    </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="79.5" data-sid="79">
+	<a><div onclick="" class='item vitem itm79'></div>
+    <span>
+    <p class="item-title">The Mark:</p>
+    <p class="itemid">(ItemID: 79)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>+1 Damage.</p>
+    <p>+0.2 Player Speed Up.</p>
+    <p>+1 Soul heart.</p>
+    <p>An item commonly found in the Devil Room.</p>
+    <p class="tags">* devil room, devil deal, damage up, passive item, red,   </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="107.5" data-sid="80">
+	<a><div onclick="" class='item vitem itm80'></div>
+    <span>
+    <p class="item-title">The Pact:</p>
+    <p class="itemid">(ItemID: 80)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>+0.5 Damage.</p>
+    <p>+0.7 Tears Up.</p>
+    <p>+2 Soul hearts.</p>
+    <p>An item commonly found in the Devil Room.</p>
+    <p class="tags">* devil room, devil deal, damage up, tears up, passive item, white, red,   </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="36" data-sid="81">
+	<a><div onclick="" class='item vitem itm81'></div>
+    <span>
+    <p class="item-title">Dead Cat:</p>
+    <p class="itemid">(ItemID: 81)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Health is set to 1 and you gain an extra 8 lives. You can increase your heart containers as normal, however each time you die it will be reset to 1 again.</p>
+    <p>This is one of the items which counts towards getting the Guppy transformation.</p>
+    <p>Each death still adds to the death counter on the stats page in game.</p>
+	<p>1/50 chance to get this item from a Rеd Chest.</p>
+    <p>14.3% chance to drop from the Super Pride mini boss.</p>
+    <p>An item commonly found in the Devil Room.</p>
+    <p class="tags">* devil room, devil deal, passive item, black,   </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="73" data-sid="82">
+	<a><div onclick="" class='item vitem itm82'></div>
+    <span>
+    <p class="item-title">Lord of the Pit:</p>
+    <p class="itemid">(ItemID: 82)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Gives the player the ability to fly over all obstacles.</p>
+    <p>+0.3 Player Speed Up.</p>
+    <p class="tags">*   devil room, devil deal, passive item, red, black,     </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="102.5" data-sid="83">
+	<a><div onclick="" class='item vitem itm83'></div>
+    <span>
+    <p class="item-title">The Nail:</p>
+    <p class="itemid">(ItemID: 83)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Adds one soul heart upon use and allows the player to break rocks by walking over them.</p>
+    <p>+0.7 Damage Modifier when activated.</p>
+    <p>-0.18 Player Speed down when activated.</p>
+    <p>Deals 40 damage on contact with enemies, in exactly the same way both the Unicorn Horn and the Pony damage on contact effects work.</p>
+    <p>An item commonly found in the Devil Room.</p>
+    <p class="unlock">UNLOCK: Unlock this item by defeating Mom's Heart three times.</p>
+    <p>Recharge Time: 6 Rooms.</p>
+    <p class="tags">*   devil room, devil deal, damage up, unlockable item, active item, spacebar item, grey, gray, red,    </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="191" data-sid="84">
+	<a><div onclick="" class='item vitem itm84'></div>
+    <span>
+    <p class="item-title">We Need To Go Deeper:</p>
+    <p class="itemid">(ItemID: 84)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Spawns a trapdoor at the player's feet which allows them to travel to the next floor.</p>
+    <p>Recharge Time: 6 Rooms.</p>
+    <p class="tags">*  ,  devil room, devil deal, active item, spacebar item, grey, gray,       </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="39" data-sid="85">
+	<a><div onclick="" class='item vitem itm85'></div>
+    <span>
+    <p class="item-title">Deck of Cards:</p>
+    <p class="itemid">(ItemID: 85)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Gives the player a random Tarot card when activated.</p>
+    <p>Recharge Time: 6 Rooms.</p>
+    <p class="tags">* active item, spacebar item, brown, yellow, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="96" data-sid="86">
+	<a><div onclick="" class='item vitem itm86'></div>
+    <span>
+    <p class="item-title">Monstro's Tooth:</p>
+    <p class="itemid">(ItemID: 86)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Upon activation spawns a friendly Monstro who jumps on a random enemy and does damage 120 to it.</p>
+    <p>Cannot be used in the Monstro boss fights.</p>
+    <p>Cannot be used if there are no enemies in the room.</p>
+    <p class="unlock">UNLOCK: Unlock this item by beating every regular boss in the Basement.</p>
+    <p>Recharge Time: 3 Rooms.</p>
+    <p class="tags">* active item, spacebar item, white, red</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="72" data-sid="87">
+	<a><div onclick="" class='item vitem itm87'></div>
+    <span>
+    <p class="item-title">Loki's Horns:</p>
+    <p class="itemid">(ItemID: 87)</p>
+    <p class="special">Special Item</p>
+    <p>Normal shots now also give the player a random chance for shots to fire in all four directions (+ shape).</p>
+    <p>Does not give a fire rate upgrade for normal tears.</p>
+    <p class="unlock">UNLOCK: Unlock this item by defeating every boss in the Depths.</p>
+    <p class="tags">* , upgrade item, special item, passive item, black, grey, gray, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="68" data-sid="88">
+	<a><div onclick="" class='item vitem itm88'></div>
+    <span>
+    <p class="item-title">Lil Chubby:</p>
+    <p class="itemid">(ItemID: 88)</p>
+    <p class="special">Special Item</p>
+    <p>Adds a follower who charges forward every ~4 seconds in the same direction as the player's shots. Lil Chubby deals 3.5 damage in rapid succession, resulting in a significant amount of damage.</p>
+    <p>Behaviour is identical to the projectiles used by the 'Chubber' enemy (DLC variant of Vis).</p>
+    <p class="unlock">UNLOCK: Unlock this item by beating every regular boss in the Caves.</p>
+    <p class="tags">* , upgrade item, special item, passive item, white, yellow, lil' chubby </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="137" data-sid="89">
+	<a><div onclick="" class='item vitem itm89'></div>
+    <span>
+    <p class="item-title">Spider's Bite:</p>
+    <p class="itemid">(ItemID: 89)</p>
+    <p class="special">Special Item</p>
+    <p>Isaac's tears now have a chance of slowing enemies and their shots for a few seconds.</p>
+    <p>Item found in the Secret Room item pool.</p>
+    <p class="unlock">UNLOCK: Unlock this item by completing the Basement.</p>
+    <p class="tags">* , upgrade item, special item, passive item, black, grey, gray, red, unlockable item,</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="133.5" data-sid="90">
+	<a><div onclick="" class='item vitem itm90'></div>
+    <span>
+    <p class="item-title">The Small Rock:</p>
+    <p class="itemid">(ItemID: 90)</p>
+    <p class="special">Special Item</p>
+    <p>+1 Damage.</p>
+    <p>+0.2 Tears Up.</p>
+    <p>-0.2 Player Speed Down.</p>
+    <p class="unlock">UNLOCK: Unlock this item by destroying enough tinted rocks.</p>
+    <p class="tags">* damage up, tears up, upgrade item, special item, unlockable item, passive item, grey, gray, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="136" data-sid="91">
+	<a><div onclick="" class='item vitem itm91'></div>
+    <span>
+    <p class="item-title">Spelunker Hat:</p>
+    <p class="itemid">(ItemID: 91)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Reveals the location of both the Secret Room and the super-secret Room.</p>
+    <p>Upon entering a room adjacent to one of the Secret Rooms, the discovery sound effect will play.</p>
+    <p>Bombs are still needed to enter, unlike the x-ray vision item.</p>
+    <p class="unlock">UNLOCK: Unlock this item by completing the Caves.</p>
+    <p class="tags">* passive item, green, grey, gray, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="146" data-sid="92">
+	<a><div onclick="" class='item vitem itm92'></div>
+    <span>
+    <p class="item-title">Super Bandage:</p>
+    <p class="itemid">(ItemID: 92)</p>
+    <p class="special">Special Item</p>
+    <p>+1 Health Up.</p>
+    <p>+2 Soul hearts.</p>
+    <p class="unlock">UNLOCK: Unlock this item by defeating the Famine, Pestilence, War and Death boss fights and defeating a total of 4 horsemen in a single playthrough (not including Conquest).</p>
+    <p class="tags">* , upgrade item, special item, unlockable item, passive item, pink,    </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="49.5" data-sid="93">
+	<a><div onclick="" class='item vitem itm93'></div>
+    <span>
+    <p class="item-title">The Gamekid:</p>
+    <p class="itemid">(ItemID: 93)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>The player turns into Pacman, which makes them invincible and does 40 damage on contact with enemies. Everytime you 'eat' an enemy you regain some health.</p>
+    <p>Enemies will also flee from the player for the duration of the effect.</p>
+    <p class="unlock">UNLOCK: Unlock this item by visiting enough arcade rooms.</p>
+    <p>Recharge Time: 6 Rooms.</p>
+    <p class="tags">* , unlockable item, active item, spacebar item, grey, gray, gameboy, white, green</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="125" data-sid="94">
+	<a><div onclick="" class='item vitem itm94'></div>
+    <span>
+    <p class="item-title">Sack of Pennies:</p>
+    <p class="itemid">(ItemID: 94)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>A coin bag follows the player and drops a coin every 2 rooms.</p>
+    <p>The frequency at which this item drops coins is decreased if you have any of the following items: Little CHAD, The Relic, Bomb Bag. </p>
+    <p class="unlock">UNLOCK: Unlock this item by defeating the Mom's Heart boss fight with Cain.</p>
+    <p class="tags">* , unlockable item, passive item, grey, gray, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="121" data-sid="95">
+	<a><div onclick="" class='item vitem itm95'></div>
+    <span>
+    <p class="item-title">Robo-Baby:</p>
+    <p class="itemid">(ItemID: 95)</p>
+    <p class="special">Special Item</p>
+    <p>A familiar which follows the player and shoots lasers, similar to the Technology 1 item but with less damage.</p>
+    <p>Robo-baby's laser does 3 damage and does not scale with damage stat upgrades.</p>
+    <p class="unlock">UNLOCK: Unlock this item by defeating the Mom's Heart boss fight with Judas.</p>
+    <p class="tags">* , upgrade item, special item, unlockable item, passive item, grey, gray, red</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="69" data-sid="96">
+	<a><div onclick="" class='item vitem itm96'></div>
+    <span>
+    <p class="item-title">Little C.H.A.D:</p>
+    <p class="itemid">(ItemID: 96)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>A follower that drops half a red heart every 3 rooms.</p>
+    <p>The frequency at which this item drops hearts is decreased if you have any of the following items: Sack of Pennies, The Relic, Bomb Bag. </p>
+    <p>If you're fighting the C.H.A.D. boss and don't have Little Chad, you get it.</p>
+    <p class="unlock">UNLOCK: Unlock this item by defeating the C.H.A.D boss.</p>
+    <p class="tags">* , unlockable item, red, passive item, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="17.5" data-sid="97">
+	<a><div onclick="" class='item vitem itm97'></div>
+    <span>
+    <p class="item-title">The Book of Sin:</p>
+    <p class="itemid">(ItemID: 97)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Spawns a random heart, key, coin, bomb, pill or Tarot card upon use.</p>
+    <p class="unlock">UNLOCK: Unlock this item by defeating all of the Seven Deadly Sins mini-bosses.</p>
+    <p>Recharge Time: 4 Rooms.</p>
+	<p>Synergies: Habit, 9 Volt, The Battery, PHD, Lucky Foot, Bloody Penny, Burnt Penny, Flat Penny, Counterfeit Penny</p>
+    <p class="tags">*   devil room, devil deal, unlockable item, black, red, active item, spacebar item, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="119.5" data-sid="98">
+	<a><div onclick="" class='item vitem itm98'></div>
+    <span>
+    <p class="item-title">The Relic:</p>
+    <p class="itemid">(ItemID: 98)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>A blue cross follows the player and drops a Soul heart every 5 rooms.</p>
+    <p>The frequency at which this item drops soul hearts is decreased if you have any of the following items: Sack of Pennies, Little CHAD, Bomb Bag. </p>
+    <p>Can appear in the Angel Room.</p>
+    <p class="unlock">UNLOCK: Unlock this item by defeating the Mom's Heart boss fight with Maggy.</p>
+    <p class="tags">* , unlockable item, passive item, blue,  </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="70" data-sid="99">
+	<a><div onclick="" class='item vitem itm99'></div>
+    <span>
+    <p class="item-title">Little Gish:</p>
+    <p class="itemid">(ItemID: 99)</p>
+    <p class="special">Special Item</p>
+    <p>A familiar which follows the player and shoots black tar tears, which slows enemy movement and projectile speed for a few seconds.</p>
+    <p>If you're fighting Gish and don't have Little Gish, you get it.</p>
+    <p>Little Gish's tears do 3.5 damage each and do not scale with damage.</p>
+    <p class="unlock">UNLOCK: Unlock this item by defeating the Gish boss.</p>
+    <p class="tags">* , upgrade item, special item, unlockable item, passive item, black, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="71" data-sid="100">
+	<a><div onclick="" class='item vitem itm100'></div>
+    <span>
+    <p class="item-title">Little Steve:</p>
+    <p class="itemid">(ItemID: 100)</p>
+    <p class="special">Special Item</p>
+    <p>A familiar which follows the player and shoots homing tears with the spoon bender effect.</p>
+    <p>If you're fighting the Steven boss and don't have either Little Steve or the 'Steven' item, you have a 5/6 chance to get Little Steve.</p>
+    <p>Little Steve's tears do 3.5 damage each and do not scale with damage stat upgrades.</p>
+    <p class="unlock">UNLOCK: Unlock this item by defeating the Steven boss.</p>
+    <p class="tags">* , upgrade item, special item, unlockable item, passive item, black, white, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="57.5" data-sid="101">
+	<a><div onclick="" class='item vitem itm101'></div>
+    <span>
+    <p class="item-title">The Halo:</p>
+    <p class="itemid">(ItemID: 101)</p>
+    <p class="special">Special Item</p>
+    <p>+1 Health Up.</p>
+    <p>+0.3 Damage.</p>
+    <p>+0.2 Tears Up.</p>
+    <p>+2.75 Range Up (Base range = 23).</p>
+    <p>+0.3 Player Speed Up.</p>
+    <p>This item does in fact give range up, contrary to what other sources claim.</p>
+    <p>Can appear in the Angel Room item pool even before it is unlocked.</p>
+    <p class="unlock">UNLOCK: Unlock this secret by killing Mom's Foot or Mom's Heart with the Bible.</p>
+    <p class="tags">* damage up, tears up, upgrade item, special item, unlockable item, passive item, yellow, white, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="83" data-sid="102">
+	<a><div onclick="" class='item vitem itm102'></div>
+    <span>
+    <p class="item-title">Mom's Bottle of Pills:</p>
+    <p class="itemid">(ItemID: 102)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Upon activation this item gives one of six random pills to the player.</p>
+    <p class="unlock">UNLOCK: Unlock this item by using several Blood Donation Machines.</p>
+    <p>Recharge Time: 6 Rooms.</p>
+    <p class="tags">* , unlockable item, active item, spacebar item, orange, white, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="29.5" data-sid="103">
+	<a><div onclick="" class='item vitem itm103'></div>
+    <span>
+    <p class="item-title">The Common Cold:</p>
+    <p class="itemid">(ItemID: 103)</p>
+    <p class="special">Special Item</p>
+    <p>Shots now have a 1/4 chance to poison enemies for a few seconds, dealing 2 damage per tick.</p>
+    <p>The chance for the poison effect to activate stacks with other items which give tears a chance to apply poison to enemies.</p>
+    <p class="unlock">UNLOCK: Unlock this item by collecting any two of the following items in the same run: Roid Rage, The Virus, Growth Hormones.</p>
+    <p class="tags">*   devil room, devil deal, upgrade item, special item, unlockable item, passive item, green, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="108.5" data-sid="104">
+	<a><div onclick="" class='item vitem itm104'></div>
+    <span>
+    <p class="item-title">The Parasite:</p>
+    <p class="itemid">(ItemID: 104)</p>
+    <p class="special">Special Item</p>
+    <p>Player's tears now split into two upon contact with anything.</p>
+    <p class="unlock">UNLOCK: Unlock this item by collecting two of the following items: Bob's Rotten Head, Dead Cat, Max's Head, Tammy's Head.</p>
+	<p>Synergies: Pinky Eye, Sacred Heart</p>
+    <p class="tags">*   devil room, devil deal, upgrade item, special item, unlockable item, passive item, pink, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="51.5" data-sid="105">
+	<a><div onclick="" class='item vitem itm105'></div>
+    <span>
+    <p class="item-title">The Dice:</p>
+    <p class="itemid">(ItemID: 105)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Upon use, any 'pedestal' items will be re-rolled into another item that corresponds with that room's item pool. Pedestal items include items from the shop, devil deal room, angеl room, boss room, treasure room or secret room.</p>
+    <p>The Dice does not re-roll trinkets or other collectables which do not spawn on a 'pedestal'.</p>
+    <p>Re-rolled items will pick from the item pool corresponding to the type of room it is in. This includes curse rooms which can re-roll items into Devil or God items.</p>
+    <p class="unlock">UNLOCK: Unlock this item by defeating the Mom's Heart boss fight with ???.</p>
+    <p>Recharge Time: 3 Rooms.</p>
+    <p class="eternal">ETERNAL MODE: There is a chance that rerolled items will become an empty pedestal (Based on your luck stat, capped at a maximum of 50% chance).</p>
+    <p class="tags">* cobalt, cobaltstreak, unlockable item, active item, spacebar item, red, cube,      </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="98" data-sid="106">
+	<a><div onclick="" class='item vitem itm106'></div>
+    <span>
+    <p class="item-title">Mr. Mega:</p>
+    <p class="itemid">(ItemID: 106)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>+5 Bombs.</p>
+    <p>All bombs dropped are now larger and do more damage (+50) and have a larger explosion.</p>
+    <p>This item will increase damage of Dr. Fetus bombs.</p>
+    <p>14.3% chance to drop from the Super Wrath mini boss.</p>
+    <p class="unlock">UNLOCK: Unlock this item by using 100 bombs.</p>
+    <p class="tags">*, unlockable item, passive item, grey, gray, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="110.5" data-sid="107">
+	<a><div onclick="" class='item vitem itm107'></div>
+    <span>
+    <p class="item-title">The Pinking Shears:</p>
+    <p class="itemid">(ItemID: 107)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Cuts Isaac's head from his body for the current room.</p>
+    <p>The player can now fly for the current room and the decapitated body will attack for 7 damage per tick to any enemies in range.</p>
+    <p class="unlock">UNLOCK: Unlock this item by dying 100 times.</p>
+    <p>Recharge Time: 6 Rooms.</p>
+    <p class="tags">* , unlockable item, active item, spacebar item, grey, gray, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="190.6" data-sid="108">
+	<a><div onclick="" class='item vitem itm108'></div>
+    <span>
+    <p class="item-title">The Wafer:</p>
+    <p class="itemid">(ItemID: 108)</p>
+    <p class="special">Special Item</p>
+    <p>Lowers all damage taken by half, rounding up to the nearest half-heart.</p>
+    <p>This item becomes most effective in the Womb/Utero and any floor after it, where all damage taken is usually a whole heart if the player does not have The Wafer.</p>
+    <p class="unlock">UNLOCK: Unlock this item by defeating Mom's Heart for a seventh time.</p>
+    <p class="tags">* , upgrade item, special item, unlockable item, passive item, white, yellow,  </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="94" data-sid="109">
+	<a><div onclick="" class='item vitem itm109'></div>
+    <span>
+    <p class="item-title">Money = Power:</p>
+    <p class="itemid">(ItemID: 109)</p>
+    <p class="special">Special Item</p>
+    <p>Damage up depending on the number of coins the player currently has.</p>
+    <p>Damage Modifier = coins * 0.04.</p>
+    <p>Note that 0.04 per coin is the base damage modifier much like every other damage up value on this page. In reality the coin can give a variable amount of damage (usually 0.01 - 0.08 per coin) post-calculations based on other items and multipliers. For this reason the static damage modifiers are used as a standard.</p>
+    <p>At 99 coins, this item gives +3.96 Damage.</p>
+    <p class="unlock">UNLOCK: Unlock this item by defeating Mom's Heart for an eighth time.</p>
+    <p class="tags">*   devil room, devil deal, damage up, upgrade item, special item, unlockable item, passive item, red, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="86" data-sid="110">
+	<a><div onclick="" class='item vitem itm110'></div>
+    <span>
+    <p class="item-title">Mom's Contacts:</p>
+    <p class="itemid">(ItemID: 110)</p>
+    <p class="special">Special Item</p>
+    <p>Shots now have a random chance to freeze enemies solid for a few seconds.</p>
+    <p>+2.75 Range Up (Base range = 23).</p>
+    <p>Reduces your shot speed stat slightly.</p>
+    <p class="unlock">UNLOCK: Unlock this item by picking up Mom's Eye and any of the following 'Mom' items: Mom's Heels, Mom's Lipstick, Mom's Pad, Mom's Bra.</p>
+    <p class="tags">* , upgrade item, special item, unlockable item, passive item, red, pink, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="8.7" data-sid="111">
+	<a><div onclick="" class='item vitem itm111'></div>
+    <span>
+    <p class="item-title">The Bean:</p>
+    <p class="itemid">(ItemID: 111)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Upon activation, all enemies within close proximity take 5 damage and become poisoned for 3.5 damage per tick.</p>
+    <p>Has an identical effect to the 'Bad Gas' Pill.</p>
+    <p class="unlock">UNLOCK: Unlock this item by destroying enough poops which are in random rooms.</p>
+    <p>Recharge Time: 1 Rooms.</p>
+	<p>Synergies: Halo of Flies, Cube of Meat, Sacraficial Dagger, Guardian Angel</p>
+    <p class="tags">* , unlockable item, active item, spacebar item, brown, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="52" data-sid="112">
+	<a><div onclick="" class='item vitem itm112'></div>
+    <span>
+    <p class="item-title">Guardian Angel:</p>
+    <p class="itemid">(ItemID: 112)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Gives the player an orbital angel which blocks shots and increases the speed of all other orbitals by x1.5 (e.g. Pretty Fly or Cube of Meat).</p>
+    <p>The Guardian Angel will also do 7 damage per tick if it comes into contact with any enemies.</p>
+    <p>Can appear in the Angel Room.</p>
+    <p class="unlock">UNLOCK: Unlock this item by killing Satan with Maggy.</p>
+    <p class="tags">* , unlockable item, passive item, pink, white, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="40" data-sid="113">
+	<a><div onclick="" class='item vitem itm113'></div>
+    <span>
+    <p class="item-title">Demon Baby:</p>
+    <p class="itemid">(ItemID: 113)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>A familiar which follows the player and automatically fires tears at any enemies within range.</p>
+    <p>The Demon Baby's tears do 3 damage each and do not scale with damage stat increases however the rate of tears is higher than usual.</p>
+    <p class="unlock">UNLOCK: Unlock this item by killing Satan with Eve.</p>
+    <p class="tags">* devil room, devil deal, unlockable item, passive item, black, grey, gray,   </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="89" data-sid="114">
+	<a><div onclick="" class='item vitem itm114'></div>
+    <span>
+    <p class="item-title">Mom's Knife:</p>
+    <p class="itemid">(ItemID: 114)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>The player replaces their ability to fire tears with a Knife which can be charged and released in a boomerang style.</p>
+    <p>Base damage with Mom's Knife = 21 damage for charged shots and 7 damage for uncharged shots.</p>
+    <p>The knife can do damage without even being charged, however charged shots do x3 damage that uncharged shots do.</p>
+    <p>The knife's damage does not appear to increase with increases to the range stat, as it was originally thought. See the FAQ page for an explanation about how the range stat effects the knife.</p>
+    <p>Mom's knife over-rides Brimstone.</p>
+    <p class="unlock">UNLOCK: Unlock this item by killing Satan with the Isaac character.</p>
+    <p class="tags">*   devil room, devil deal, unlockable item, passive item, gray, grey, stabby time, knife party, wolv21,       </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="107" data-sid="115">
+	<a><div onclick="" class='item vitem itm115'></div>
+    <span>
+    <p class="item-title">Ouija Board:</p>
+    <p class="itemid">(ItemID: 115)</p>
+    <p class="special">Special Item</p>
+    <p>Gives the player spectral tears, which will travel through rocks or obstacles.</p>
+    <p>This effect includes poop and fires, meaning it takes longer to extinguish or break them.</p>
+    <p>An item commonly found in the Devil Room.</p>
+    <p class="tags">* devil room, devil deal, upgrade item, special item, passive item, yellow, brown,   </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="2" data-sid="116">
+	<a><div onclick="" class='item vitem itm116'></div>
+    <span>
+    <p class="item-title">9 Volt:</p>
+    <p class="itemid">(ItemID: 116)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Upon using a spаcebar item, two bars of charge will automatically be re-charged.</p>
+    <p>Upon pickup, the current spаcebar item will be fully charged if it isn't already.</p>
+    <p>Item found in the Shop Room item pool.</p>
+    <p class="tags">* passive item, brown, yellow, grey, gray, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="35" data-sid="117">
+	<a><div onclick="" class='item vitem itm117'></div>
+    <span>
+    <p class="item-title">Dead Bird:</p>
+    <p class="itemid">(ItemID: 117)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>One of Eve's starting item.</p>
+    <p>When the player takes damage, the bird will start attacking nearby enemies for the current room, doing very frequent attacks at 2 damage each.</p>
+    <p class="unlock">UNLOCK: Unlock this item by making two deals with the devil in a single play through.</p>
+    <p class="tags">* , unlockable item, passive item, grey, gray, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="21" data-sid="118">
+	<a><div onclick="" class='item vitem itm118'></div>
+    <span>
+    <p class="item-title">Brimstone:</p>
+    <p class="itemid">(ItemID: 118)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Standard tears are replaced with the ability to charge and fire a laser that penetrates anything in its path and does 300% damage.</p>
+    <p>The laser can only be shot when fully charged unless you have the Chocolate Milk item.</p>
+    <p>The Lump of Coal item will simply give +2 damage to this item.</p>
+    <p>It is possible to charge the beam before entering the next room, meaning the first shot can be immediately released.</p>
+    <p>There is a known glitch with Brimstone where if you spam the arrow key after releasing the laser, it can do significantly more damage. This glitch appears to make Brimstone hit the target between 3-5 times, as opposed to the normal 2 ticks.</p>
+    <p>An item commonly found in the Devil Room.</p>
+	<p>Synergies: Chocolate Milk, The Inner Eye, Ipecac, Sacred Heart, Polyphemus, Common Cold, Spider's Bite, Mom's Contacts, A Lump of Coal, Curved Horn, Number One, Technology 2</p>
+    <p class="eternal">ETERNAL MODE: Brimstone will only appear in the devil room 1/4 of the time.</p>
+    <p class="tags">*  devil room, devil deal, passive item, brimsnap, red, black, crumps,       </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="10" data-sid="119">
+	<a><div onclick="" class='item vitem itm119'></div>
+    <span>
+    <p class="item-title">Blood Bag:</p>
+    <p class="itemid">(ItemID: 119)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>+1 Health Up.</p>
+    <p>+0.3 Player Speed Up.</p>
+    <p>Heals 4 whole red hearts.</p>
+    <p>1/30 chance to spawn from a broken Blood Donation Machine if you have not picked up the IV Bag before.</p>
+    <p class="tags">* passive item, red, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="106" data-sid="120">
+	<a><div onclick="" class='item vitem itm120'></div>
+    <span>
+    <p class="item-title">Odd Mushroom (Thin):</p>
+    <p class="itemid">(ItemID: 120)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>+1.7 Tears Up (Very high rate of fire).</p>
+    <p>+0.3 Player Speed Up.</p>
+    <p>Damage down in an interesting way: 'damage = (damage * 0.9) - 0.4'. This is effectively -1 damage at lower damage stats.</p>
+    <p class="tags">* , tears up, passive item, grey, gray, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="105" data-sid="121">
+	<a><div onclick="" class='item vitem itm121'></div>
+    <span>
+    <p class="item-title">Odd Mushroom (Thick):</p>
+    <p class="itemid">(ItemID: 121)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>+1 Health Up.</p>
+    <p>+0.3 Damage.</p>
+    <p>+2.75 Range Up (Base range = 23).</p>
+    <p>-0.1 Player Speed Down.</p>
+    <p>The -10% speed from this item does not stack with the speed down from The Virus item.</p>
+    <p>Increases the size of Isaac's head by 20%.</p>
+    <p class="tags">* damage up, passive item, brown, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="192" data-sid="122">
+	<a><div onclick="" class='item vitem itm122'></div>
+    <span>
+    <p class="item-title">Whore of Babylon:</p>
+    <p class="itemid">(ItemID: 122)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>When the player only has only half a heart of health left, Isaac enters a curse state which adds player speed and damage.</p>
+    <p>+2.16 Damage Modifier and +0.36 Player Speed Up if triggered by falling below 1 red heart in the current room.</p>
+    <p>+1.5 Damage Modifier and +0.3 Player Speed Up if triggered in a different room but the item is still enabled.</p>
+    <p>One of Eve's starting items.</p>
+    <p class="unlock">UNLOCK: Unlock this item by making two deals with the devil in a single play through (which will also unlock the Eve character).</p>
+    <p class="tags">* speed up, devil room, devil deal, damage up, unlockable item, passive item, red, black, curse, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="95" data-sid="123">
+	<a><div onclick="" class='item vitem itm123'></div>
+    <span>
+    <p class="item-title">Monster Manuel:</p>
+    <p class="itemid">(ItemID: 123)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Spawns a random familiar for the current room only.</p>
+    <p>Possible followers include: Brother Bobby, Cube of Meat (2nd or 3rd form), Halo of Flies, Distant Admiration, Sister Maggy, Lil Chubby, Robo-Baby, Little Gish, Little Steve, Guardian Angel, Demon Baby, Forever Alone.</p>
+    <p>Cannot spawn a follower you already have.</p>
+    <p class="unlock">UNLOCK: Unlock this item by killing Satan with Judas.</p>
+    <p>Recharge Time: 4 Rooms.</p>
+    <p class="tags">*   devil room, devil deal, unlockable item, active item, spacebar item, brown, book</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="38" data-sid="124">
+	<a><div onclick="" class='item vitem itm124'></div>
+    <span>
+    <p class="item-title">Dead Sea Scrolls:</p>
+    <p class="itemid">(ItemID: 124)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Upon use, uses a random activated item.</p>
+    <p>The following item effects can occur: The Bооk of Belial, The Necronomicon, Mr. Boom!. Tammy's Head, Moms Bra, Kamikaze!, Mom's Pad, Bob's Rotten Head, Teleport!, Yum Heart, Lemon Mishap, Shoop Da Whoop!, Bооk of Shadows, Wiggle Worm, Anarchist Cookbооk, The Hourglass, My Little Unicorn, Bооk of Revelations, The Nail, We Need To Go Deeper!, Deck of Cards, Monstro's Tooth, The Gamekid, The Bооk of Sin, Moms Bottle of Pills, The Pinking Shears.</p>
+    <p>Recharge Time: 4 Rooms.</p>
+    <p class="tags">* active item, spacebar item, white,</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="13" data-sid="125">
+	<a><div onclick="" class='item vitem itm125'></div>
+    <span>
+    <p class="item-title">Bobby - Bomb:</p>
+    <p class="itemid">(ItemID: 125)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>+5 Bombs</p>
+    <p>All bombs now move towards the closest enemy.</p>
+    <p>Bombs created by the Dr. Fetus item are also affected by this effect.</p>
+    <p class="tags">* passive item, grey, gray, black, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="119" data-sid="126">
+	<a><div onclick="" class='item vitem itm126'></div>
+    <span>
+    <p class="item-title">Razor Blade:</p>
+    <p class="itemid">(ItemID: 126)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Deals damage to the player in exchange for damage stat increases.</p>
+    <p>Each use gives the player +1.2 damage per use for the current room.</p>
+    <p class="unlock">UNLOCK: Unlock this item by finishing the Womb with Eve.</p>
+    <p>Recharge Time: Instant.</p>
+    <p class="tags">*   devil room, devil deal, damage modifier, unlockable item, active item, spacebar item, grey, gray, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="49" data-sid="127">
+	<a><div onclick="" class='item vitem itm127'></div>
+    <span>
+    <p class="item-title">Forget me now:</p>
+    <p class="itemid">(ItemID: 127)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Upon activation, the current floor is refreshed with new rooms, monsters and items.</p>
+    <p class="unlock">UNLOCK: Unlock this item by killing Satan with ???.</p>
+    <p>Recharge Time: One time use.</p>
+    <p class="tags">*   devil room, devil deal, unlockable item, active item, spacebar item, white, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="48" data-sid="128">
+	<a><div onclick="" class='item vitem itm128'></div>
+    <span>
+    <p class="item-title">Forever Alone:</p>
+    <p class="itemid">(ItemID: 128)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Gives the player a blue attack fly that orbits from a long distance.</p>
+    <p>The Forever Alone fly does 2 damage per tick and does not scale with damage stat changes.</p>
+    <p>14.3% chance to drop from the Super Envy mini boss. Killing the blueberry enemy last is just a placebo effect and does not give more chance for this item.</p>
+    <p class="tags">* familiar, passive item, blue, grey, gray, black</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="23" data-sid="129">
+	<a><div onclick="" class='item vitem itm129'></div>
+    <span>
+    <p class="item-title">Bucket of Lard:</p>
+    <p class="itemid">(ItemID: 129)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>+2 Health Up.</p>
+    <p>-0.2 Player Speed Down.</p>
+    <p>14.3% chance to drop from the Super Gluttony mini boss.</p>
+    <p class="tags">* passive item, white, gray, grey, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="4" data-sid="130">
+	<a><div onclick="" class='item vitem itm130'></div>
+    <span>
+    <p class="item-title">A Pony:</p>
+    <p class="itemid">(ItemID: 130)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Gives the player the ability to fly over environmental obstacles e.g. Rocks, gaps, spikes.</p>
+    <p>The Pony isn't a static speed increase, it sets player speed to 150% of base speed or the player's current speed stat, depending on which is higher.</p>
+    <p>The active use of this item allows the player to become invincible and charge across the screen, dealing 40 damage to anything it comes into contact with.</p>
+    <p>There is a known bug with this item where if the player activates the pony and doesn't move, they become invincible until they move again. You can still fire tears while using this glitch using the mouse click.</p>
+    <p>If you're fighting the Headless Horseman boss and don't have this item, you get it.</p>
+    <p>Recharge Time: 4 Rooms.</p>
+    <p class="tags">* active item, spacebar item, black,    </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="16" data-sid="131">
+	<a><div onclick="" class='item vitem itm131'></div>
+    <span>
+    <p class="item-title">Bomb Bag:</p>
+    <p class="itemid">(ItemID: 131)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>A bag of bombs which follows the player and drops a random type of bomb every 3 rooms.</p>
+    <p>The frequency at which this item drops bombs is decreased if you have any of the following items: Sack of Pennies, Little CHAD, The Relic. </p>
+    <p>Dropped bomb can either be a single Bomb, two bombs or a troll bomb.</p>
+    <p class="unlock">UNLOCK: Unlock this item by killing Satan with Cain.</p>
+    <p class="tags">* , unlockable item, passive item, grey, gray, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="75" data-sid="132">
+	<a><div onclick="" class='item vitem itm132'></div>
+    <span>
+    <p class="item-title">Lump of Coal:</p>
+    <p class="itemid">(ItemID: 132)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Damage up (and tear size) based on how long tears are in the air.</p>
+    <p>+0.14 damage every frame on screen up to a maximum of 150 frames (5 seconds) for a total of +21 damage.</p>
+    <p>If you have Brimstone or Technology, the Lump of Coal gives a flat +2 damage.</p>
+    <p>This item synergises extremely well with range stat ups or the My Reflection item, since they both allow tears to maintain airtime for a longer period.</p>
+    <p>Lump of Coal does nothing in terms of damage if you have Mom's Knife.</p>
+    <p>This item is a 100% drop chance from the Krampus boss, who has a 10% chance of spawning in any Devil Deal Room. The chance of Krampus spawning jumps up to 40% if you've taken a Devil deal this run.</p>
+    <p class="unlock">UNLOCK: Unlock this item by defeating the Krampus boss fight.</p>
+    <p class="tags">* damage modifier, unlockable item, passive item, black,   </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="55" data-sid="133">
+	<a><div onclick="" class='item vitem itm133'></div>
+    <span>
+    <p class="item-title">Guppy's Paw:</p>
+    <p class="itemid">(ItemID: 133)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Converts one heart container into 3 Soul hearts.</p>
+    <p>1/50 chance to spawn in a rеd chest.</p>
+    <p>Counts as one item towards getting the Guppy transformation.</p>
+    <p>Synergises well with the polaroid or other effects which activate when the player has less than one rеd heart.</p>
+    <p>An item commonly found in the Devil Room.</p>
+    <p>Recharge Time: Instant.</p>
+	<p>Synergies: Lucky Foot, PHD, Polaroid, Whore of Babylon, Dead Cat</p>
+    <p class="eternal">ETERNAL MODE: Guppy's Paw only gives 2 soul hearts in exchange for one heart container.</p>
+    <p class="tags">* devil room, devil deal, active item, spacebar item, pink, grey, gray,       </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="56" data-sid="134">
+	<a><div onclick="" class='item vitem itm134'></div>
+    <span>
+    <p class="item-title">Guppy's Tail:</p>
+    <p class="itemid">(ItemID: 134)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Upon clearing a room, the tail gives 1/3 chance to drop either a brоwn or gold chest with equal probability.</p>
+    <p>If no chest spawns because of this item, there is a 1/3 chance that nothing will spawn after clearing the room. In other words, after clearing each room there is a 22% chance that any pickups drops will be negated (e.g. keys, bombs, coins etc.)</p>
+    <p>An item commonly found in the Devil Room.</p>
+    <p>1/25 chance to spawn in a rеd chest. 1/40 chance to spawn if you have not completed the '9 Deaths' challenge.</p>
+    <p>Counts as one item towards getting the Guppy transformation.</p>
+    <p>Picking up more than one Guppy's Tail item counts multiple times towards getting the Guppy transformation. This is the only Guppy item out of the four which can count more than once.</p>
+    <p class="unlock">UNLOCK: Unlocks by completing the '9 Deaths' challenge.</p>
+    <p class="tags">*   devil room, devil deal, unlockable item, white, black, grey, gray, passive item, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="64" data-sid="135">
+	<a><div onclick="" class='item vitem itm135'></div>
+    <span>
+    <p class="item-title">IV Bag:</p>
+    <p class="itemid">(ItemID: 135)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Upon use, the IV bag will remove hearts and in exchange drop coins on the floor.</p>
+    <p>1/30 chance to spawn when using the Blood Donation Machine.</p>
+    <p>The IV bag can be used multiple times per half heart of damage due to the length of invincibility after taking damage.</p>
+    <p>Synergises very well with the Bloody Penny trinket and game breaking combos using the D20.</p>
+    <p>Can be extremely useful for the no-hit achievements since damage taken from the IV bag does not make you lose credit for the achievement.</p>
+    <p>Recharge Time: Instant.</p>
+    <p class="tags">* active item, spacebar item, red, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="9" data-sid="136">
+	<a><div onclick="" class='item vitem itm136'></div>
+    <span>
+    <p class="item-title">Best Friend:</p>
+    <p class="itemid">(ItemID: 136)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Places a 'decoy' Isaac on the floor which explodes for 110 damage to anything in range.</p>
+    <p>This item is known to cause a lot of instant death glitches. If the best friend is hit by a blood laser or gets stomped (in most cases), you can instantly die. Example situations include The Fallen/Krampus/Pride blood lasers and the stomp attacks during the Mom/Satan bosses. Having no red heart containers and only soul hearts can prevent most of these situations but not all.</p>
+    <p>Recharge Time: 3 Rooms.</p>
+    <p class="tags">* active item, spacebar item, pink, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="120" data-sid="137">
+	<a><div onclick="" class='item vitem itm137'></div>
+    <span>
+    <p class="item-title">Remote Detonator:</p>
+    <p class="itemid">(ItemID: 137)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>+5 Bombs.</p>
+    <p>Bombs no longer explode after a set period of time and will only do so when you use this item.</p>
+    <p>Recharge Time: Instant.</p>
+    <p class="tags">* active item, spacebar item, red, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="145" data-sid="138">
+	<a><div onclick="" class='item vitem itm138'></div>
+    <span>
+    <p class="item-title">Stigmata:</p>
+    <p class="itemid">(ItemID: 138)</p>
+    <p class="special">Special Item</p>
+    <p>+1 Health Up.</p>
+    <p>+0.3 Damage.</p>
+    <p class="tags">* damage up, upgrade item, special item, passive item, brown, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="92" data-sid="139">
+	<a><div onclick="" class='item vitem itm139'></div>
+    <span>
+    <p class="item-title">Mom's Purse:</p>
+    <p class="itemid">(ItemID: 139)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Allows the player to hold one additional trinket.</p>
+    <p>This item allows the player to pick up a second trinket when they have also picked up The Tick.</p>
+    <p>Item found in the Shop Room item pool.</p>
+    <p class="tags">* passive item, pink, purple, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="14" data-sid="140">
+	<a><div onclick="" class='item vitem itm140'></div>
+    <span>
+    <p class="item-title">Bob's Curse:</p>
+    <p class="itemid">(ItemID: 140)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>+5 Bombs</p>
+    <p>All dropped bombs will explode for 60 damage (base bomb damage) and leaves a poison effect, which does 7 damage per tick.</p>
+    <p>14.3% chance to drop from the Super Sloth mini boss.</p>
+    <p class="tags">* passive item, green, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="108" data-sid="141">
+	<a><div onclick="" class='item vitem itm141'></div>
+    <span>
+    <p class="item-title">Pageant Boy:</p>
+    <p class="itemid">(ItemID: 141)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Spawns 7 coins around the player, which can be pennies, nickels or dimes.</p>
+    <p>Isaac wears a purple crown on his head when picked up.</p>
+    <p class="tags">* passive item, pink, purple, diana, nocrown, yescrown, teamnocrown, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="129" data-sid="142">
+	<a><div onclick="" class='item vitem itm142'></div>
+    <span>
+    <p class="item-title">Scapular:</p>
+    <p class="itemid">(ItemID: 142)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Once per room, when the player is damaged to half a red heart left, they gain one Soul heart.</p>
+    <p>Works slightly differently with ??? or if you have only soul hearts. When ??? takes damage that removes his final soul heart, he immediately gains one Soul Heart.</p>
+    <p>You can tell when the scapular effect has been used for the current room because the yellow glow behind the player will have disappeared.</p>
+    <p>Getting this item with the Habit means you can get an infinite amount of rolls on your space bar item. If you also have the D6 you can infinitely roll item rooms until you get any item you want and crash the game to your heart's content.</p>
+    <p>Can appear in the Angel Room.</p>
+    <p class="tags">* passive item, grey, gray, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="135" data-sid="143">
+	<a><div onclick="" class='item vitem itm143'></div>
+    <span>
+    <p class="item-title">Speed Ball:</p>
+    <p class="itemid">(ItemID: 143)</p>
+    <p class="special">Special Item</p>
+    <p>+0.3 Player Speed Up.</p>
+    <p>+0.2 Shot Speed Up.</p>
+    <p>(Base shot speed is 1.0 and Max shot speed is 1.4)</p>
+    <p class="tags">* , upgrade item, special item, passive item, white, bisnap, syringe</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="24" data-sid="144">
+	<a><div onclick="" class='item vitem itm144'></div>
+    <span>
+    <p class="item-title">Bum Friend:</p>
+    <p class="itemid">(ItemID: 144)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>A beggar who follows the player around and automatically picks up nearby coins. When picking up coins he will occasionally drop pickups (e.g. hearts, bombs, keys, pills, trinkets and tarot cards).</p>
+    <p class="tags">* passive item, pink, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="54" data-sid="145">
+	<a><div onclick="" class='item vitem itm145'></div>
+    <span>
+    <p class="item-title">Guppy's Head:</p>
+    <p class="itemid">(ItemID: 145)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Upon activation, spawns 2-4 bluе flies which damage nearby enemies. Bluе flies do twice the player's damage.</p>
+    <p>Counts as one item towards getting the Guppy transformation.</p>
+    <p>1/50 chance to spawn in a rеd chest.</p>
+    <p>An item commonly found in the Devil Room.</p>
+    <p>Recharge Time: 1 Rooms.</p>
+	<p>Synergies: Chemical Peel</p>
+    <p class="tags">*   devil room, devil deal, active item, spacebar item, black, white, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="114" data-sid="146">
+	<a><div onclick="" class='item vitem itm146'></div>
+    <span>
+    <p class="item-title">Prayer Card:</p>
+    <p class="itemid">(ItemID: 146)</p>
+    <p class="special">Special Item*</p>
+    <p>Gives the player half an eternal heart upon use.</p>
+    <p>Can appear in the Angel Room.</p>
+    <p>Recharge Time: 6 Rooms.</p>
+    <p class="special">NOTE: This item is marked as special in the code but doesn't actually count as a special item when you pick it up or use it, meaning it won't increase your special item counter.</p>
+    <p class="tags">* , upgrade item, special item, active item, spacebar item, yellow, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="103" data-sid="147">
+	<a><div onclick="" class='item vitem itm147'></div>
+    <span>
+    <p class="item-title">Notched Axe:</p>
+    <p class="itemid">(ItemID: 147)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Breaks a single rock when activated.</p>
+    <p>It's possible to use this item infinitely if you have access to another pedestal with a spacebar item on it by activating the Notched Axe, placing it back on the pedestal and walking out the room with the effect still active.</p>
+    <p>Recharge Time: 1 Rooms.</p>
+    <p class="tags">* active item, spacebar item, brown, grey, gray, notch, minecraft,</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="61" data-sid="148">
+	<a><div onclick="" class='item vitem itm148'></div>
+    <span>
+    <p class="item-title">Infestation:</p>
+    <p class="itemid">(ItemID: 148)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>When the player gets hit, 1-3 bluе flies randomly spawn, which will attack enemies in close proximity.</p>
+    <p>Bluе flies do twice the player's damage.</p>
+    <p class="tags">* passive item, yellow, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="63" data-sid="149">
+	<a><div onclick="" class='item vitem itm149'></div>
+    <span>
+    <p class="item-title">IPECAC:</p>
+    <p class="itemid">(ItemID: 149)</p>
+    <p class="special">Special Item</p>
+    <p>Tears now become grееn projectiles which will arc over enemies and rocks and explode on contact, dealing 53.5 damage to anything in range at base damage. Damage increases will increase that number slightly.</p>
+    <p>Tears down significantly: (delay = delay * 2.1 + 3).</p>
+    <p>Since this item effectively gives you unlimited bombs, it is extremely useful for finding secret rooms and escaping from tricky rooms by bombing the door.</p>
+    <p>Too many Range stat upgrades can make this item harder to aim short shots.</p>
+    <p>Taking Ipecac and My Reflection is a terrible idea. Don't do it.</p>
+	<p>Synergies: Spoon Bender, Sacred Heart, Telepathy for Dummies, Cat-O-Nine-Tails, Charm of the Vampire, Chocolate Milk, Cupid's Arrow, A Lump of Coal, Technology 1 + 2, Tough Love, The Wafer, Pyromaniac, Cricket's Body</p>
+    <p class="tags">*  , upgrade item, special item, passive item, tear modifier, grey, gray, brown,         </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="188" data-sid="150">
+	<a><div onclick="" class='item vitem itm150'></div>
+    <span>
+    <p class="item-title">Tough Love:</p>
+    <p class="itemid">(ItemID: 150)</p>
+    <p class="special">Special Item</p>
+    <p>Isaac now randomly shoots teeth instead of tears which deal x3.2 more damage than normal shots.</p>
+    <p>The probability to fire a tooth is linked to the player's Luck stat, with +10 luck being a guaranteed tooth and base luck giving you a 1/10 chance for each tear to be a tooth. You start on +1 luck by default so a total of 9 'Luck Up' pills will result in all teeth shots.</p>
+    <p>This item is only one of two uses for the in-game Luck Stat, with the other use being the chance for consumables to drop after clearing a room.</p>
+    <p class="tags">* upgrade item, special item, passive item, tear modifier, grey, gray, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="99" data-sid="151">
+	<a><div onclick="" class='item vitem itm151'></div>
+    <span>
+    <p class="item-title">The Mulligan:</p>
+    <p class="itemid">(ItemID: 151)</p>
+    <p class="special">Special Item</p>
+    <p>On each successful hit, the player has a 1/6 chance to spawn a blue fly which fies towards your current target and damages them.</p>
+    <p>Blue flies do twice the player's damage.</p>
+    <p>Does not stack with the fly spawning ability that you get from being Guppy the cat.</p>
+    <p class="tags">* , upgrade item, special item, passive item, blue, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="150" data-sid="152">
+	<a><div onclick="" class='item vitem itm152'></div>
+    <span>
+    <p class="item-title">Technology 2:</p>
+    <p class="itemid">(ItemID: 152)</p>
+    <p class="special">Special Item</p>
+    <p>Fires a continuous laser with unlimited range in addition to normal tears, which pierces all enemies and does damage 10 times per second.</p>
+    <p>As Cain you will only fire the Tech 2 laser and no tears, due to his eyepatch.</p>
+    <p>Damage down after calculations by a multiplier of 0.65. This -35% damage scales with all other damage increasing items and applies to other items like Mom's Knife or Brimstone, if you have them.</p>
+    <p>The laser damages every 3 frames (10 times per second).</p>
+	<p>Synergies: Brimstone, Chocolate Milk, Dr. Fetus, Epic Fetus, The Inner Eye, Ipacec, Mom's Contacts, The Mulligan, Mutant Spider, My Little Unicorn/VII The Chariot, Polyphemus, Technology 1</p>
+    <p class="tags">* , upgrade item, special item, passive item, tear modifier, grey, gray, red,  </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="100" data-sid="153">
+	<a><div onclick="" class='item vitem itm153'></div>
+    <span>
+    <p class="item-title">Mutant Spider:</p>
+    <p class="itemid">(ItemID: 153)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Tears now shoot four at a time (Quad shot).</p>
+    <p>Tears down significantly: (delay = delay * 2.1 + 3).</p>
+    <p>This essentially lowers your tear rate by about 2 tears per second.</p>
+    <p>The order in which you take Polyphemus and the Mutant Spider items does NOT matter, the combination will be the same no matter which item you took first. Having Quad and Poly at the same time is not a damage down as long as you hit with 2 or more tears and the only damage down situation is if you have another tear modifier such as Mom's Knife or Brimstone which brings you back down to a single damage source.</p>
+    <p>In the 1.5 version of the game (Most unholy edition), this item is a spеcial item.</p>
+    <p class="tags">* passive item, tear modifier, green, </p>
+    </span>
+
+    </a>
+</span>
+
+<li class="textbox" data-tid="28" data-sid="154">
+	<a><div onclick="" class='item vitem itm154'></div>
+    <span>
+    <p class="item-title">Chemical Peel:</p>
+    <p class="itemid">(ItemID: 154)</p>
+    <p class="special">Special Item</p>
+    <p>Tears shot from Isaac's left eye now do +2 damage.</p>
+    <p>Since Cain only fires from one eye, shots have a 50% chance to do +2 damage for him.</p>
+    <p class="tags">* , upgrade item, special item, passive item, harvey dent, green, brown, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="108.6" data-sid="155">
+	<a><div onclick="" class='item vitem itm155'></div>
+    <span>
+    <p class="item-title">The Peeper:</p>
+    <p class="itemid">(ItemID: 155)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Gives the player an eye companion which floats around the room (similar to the eyes in the Peep boss fight) and damages enemies on contact.</p>
+    <p>The Peeper does 8 damage per tick and does not scale with damage stat changes.</p>
+    <p>Shots from the left eye are now coloured red but do no extra damage.</p>
+    <p class="tags">* familiar, passive item, white, red, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="57" data-sid="156">
+	<a><div onclick="" class='item vitem itm156'></div>
+    <span>
+    <p class="item-title">Habit:</p>
+    <p class="itemid">(ItemID: 156)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>With this item, when the player takes damage, your spacebar is recharged for 1 room's worth of recharge (e.g. Taking 3 hits would recharge your D6 from empty to full).</p>
+    <p>The Habit synergises extremely well with a few items such as Bооk of Revelations, the Nail and Yum Heart</p>
+
+    <p class="tags">* passive item, hat, black, white, cobaltstreak, habbit, hibbit, hibit     </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="12.1" data-sid="157">
+	<a><div onclick="" class='item vitem itm157'></div>
+    <span>
+    <p class="item-title">Bloody Lust:</p>
+    <p class="itemid">(ItemID: 157)</p>
+    <p class="special">Special Item</p>
+    <p>Each time the player kills an enemy, damage up by +0.28 up to a cap of 2.3.</p>
+    <p>It is commonly believed that the cap is +3.3 damage, however this value is reduced by 1 before being applied to damage, meaning the cap is +2.3 in reality.</p>
+    <p>The rage effect from this item can stack with the 'Samson's Lock' Trinket but will still stack at a max of +2.3 damage.</p>
+    <p>Samson starts with this item.</p>
+    <p>An item sometimes found in the Devil Room.</p>
+    <p class="unlock">UNLOCK: Unlock this item by completing the Womb with Samson. Due to a bug this is already in the item room pool before unlocking it but beating the Womb with Samson will also put it in the devil room pool.</p>
+    <p class="tags">*    devil room, devil deal, damage modifier, upgrade item, special item, unlockable item, passive item, red, northernlion</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="31" data-sid="158">
+	<a><div onclick="" class='item vitem itm158'></div>
+    <span>
+    <p class="item-title">Crystal Ball:</p>
+    <p class="itemid">(ItemID: 158)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Reveals the entire map and gives the player a random tarot card or soul heart (50% chance for each).</p>
+    <p>Removes Curse of Darkness if present on the current floor.</p>
+    <p>1/30 chance to drop from a Fortune Machine.</p>
+    <p>Recharge Time: 6 Rooms.</p>
+    <p class="tags">* active item, spacebar item, face, reflection, purple, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="139" data-sid="159">
+	<a><div onclick="" class='item vitem itm159'></div>
+    <span>
+    <p class="item-title">Spirit of The Night:</p>
+    <p class="itemid">(ItemID: 159)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Gives the player the ability to fly and spectral tears.</p>
+    <p>An item commonly found in the Devil Room.</p>
+    <p class="tags">* devil room, devil deal, passive item, black, red,       </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="30" data-sid="160">
+	<a><div onclick="" class='item vitem itm160'></div>
+    <span>
+    <p class="item-title">Crack the Sky:</p>
+    <p class="itemid">(ItemID: 160)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Upon activation, this item creates beams of light at random locations in the current room, which deal damage to any enemies which come in contact with them.</p>
+    <p>Each beam does 20 damage per tick, up to a maximum of 4 ticks per beam if the enemy remains in the beam for the entire duration.</p>
+    <p>The Conquest boss uses this item during the fight.</p>
+    <p>Recharge Time: 4 Rooms.</p>
+    <p class="tags">* active item, spacebar item, white, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="8" data-sid="161">
+	<a><div onclick="" class='item vitem itm161'></div>
+    <span>
+    <p class="item-title">Ankh:</p>
+    <p class="itemid">(ItemID: 161)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Upon death, the player respawns as Blue Baby with three Soul hearts. This is a one time use and all new heart containers will be Soul hearts.</p>
+    <p>This effect still works if the Blue Baby is not available yet.</p>
+    <p>Item found in the Secret Room item pool.</p>
+    <p class="tags">* passive item, gray, grey,    </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="26.1" data-sid="162">
+	<a><div onclick="" class='item vitem itm162'></div>
+    <span>
+    <p class="item-title">Celtic Cross:</p>
+    <p class="itemid">(ItemID: 162)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Upon taking damage, the player has a 1/5 chance to gain an invulnerability shield for 200 frames (6.66 seconds).</p>
+    <p class="unlock">UNLOCK: Unlock this item by completing the Cathedral floor with Maggy.</p>
+    <p class="tags">* , unlockable item, passive item, gray, grey, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="50" data-sid="163">
+	<a><div onclick="" class='item vitem itm163'></div>
+    <span>
+    <p class="item-title">Ghost Baby:</p>
+    <p class="itemid">(ItemID: 163)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>A familiar which follows the player and shoots spectral tears.</p>
+    <p>Ghost Baby's tears do 3.5 damage each and do not scale with damage stat changes.</p>
+    <p>If you take the Holy Water with this familiar, it will automatically turn it into Brother Bobby until you activate the Holy Water, at which point it will then turn back into Ghost Baby.</p>
+    <p class="tags">* passive item, grey, gray, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="25.5" data-sid="164">
+	<a><div onclick="" class='item vitem itm164'></div>
+    <span>
+    <p class="item-title">The Candle:</p>
+    <p class="itemid">(ItemID: 164)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>An active item which fires a blue flame that damages anything in its path for significant damage (23 damage per tick).</p>
+    <p>The blue flame destroys enemy projectiles, making it extremely useful during the Isaac and Blue Baby Boss fights.</p>
+    <p class="unlock">UNLOCK: Unlocks by completing the 'Dark was the Night' challenge.</p>
+    <p>Item found in the Shop Room item pool.</p>
+    <p>Recharge Time: 3-4 seconds.</p>
+    <p class="tags">*    unlockable item, active item, spacebar item, blue,       </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="26" data-sid="165">
+	<a><div onclick="" class='item vitem itm165'></div>
+    <span>
+    <p class="item-title">Cat-O-Nine-Tails:</p>
+    <p class="itemid">(ItemID: 165)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>+0.23 Shot Speed Up.</p>
+    <p>(Base shot speed is 1.0 and Max shot speed is 1.4)</p>
+    <p class="tags">* passive item, grey, gray, black, bisnap</p>
+    </span>
+    </a>
+</li>
+
+
+<li class="textbox" data-tid="33.5" data-sid="166">
+	<a><div onclick="" class='item vitem itm166'></div>
+    <span>
+    <p class="item-title">The D20:</p>
+    <p class="itemid">(ItemID: 166)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Re-rolls all pickups in the current room into another random pickup or chest.</p>
+    <p>This includes hearts, bombs, keys, coins, pills, tarot cards, trinkets and chests.</p>
+    <p>Synergises well with The Habit since it can be abused with the Blood Donation Machine.</p>
+    <p>Also works on troll bombs spawned by the War boss fight or XVI Tower tarot card.</p>
+    <p class="unlock">UNLOCK: Unlock this item by completing the Cathedral with Isaac.</p>
+    <p>Recharge Time: 6 Rooms.</p>
+    <p class="tags">* , unlockable item, active item, spacebar item, red, dice, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="59" data-sid="167">
+	<a><div onclick="" class='item vitem itm167'></div>
+    <span>
+    <p class="item-title">Harlequin Baby:</p>
+    <p class="itemid">(ItemID: 167)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>A familiar which follows the player and shoots two tears diagonally.</p>
+    <p>The Harlequin baby's tears do 4 damage each and do not scale with damage stat changes.</p>
+    <p class="tags">* passive item, red, pink, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="46" data-sid="168">
+	<a><div onclick="" class='item vitem itm168'></div>
+    <span>
+    <p class="item-title">Epic Fetus:</p>
+    <p class="itemid">(ItemID: 168)</p>
+    <p class="special">Special Item</p>
+    <p>Tears now become missiles which do 80 damage each (the same as the 'Doctor's Remote' item).</p>
+    <p>Damage, tear and range stat upgrades do not affect this item.</p>
+    <p>Epic Fetus over-rides every other item.</p>
+    <p>Only found in the Secret Room item pool.</p>
+    <p class="eternal">ETERNAL MODE: Epic Fetus will only appear in the secret room 1/3 of the time.</p>
+    <p class="unlock">UNLOCK: Unlocks by completing the 'Doctor's Revenge' challenge.</p>
+    <p class="tags">*   , upgrade item, special item, unlockable item, passive item, tear modifier, black, grey, gray, pink,        </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="112" data-sid="169">
+	<a><div onclick="" class='item vitem itm169'></div>
+    <span>
+    <p class="item-title">Polyphemus:</p>
+    <p class="itemid">(ItemID: 169)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Greatly increases the damage of Isaac's tears but lowers the tears stat greatly.</p>
+    <p>Tears down significantly: (delay = delay * 2.1 + 3).</p>
+    <p>This essentially lowers your tear rate by about 2 tears per second.</p>
+    <p>Damage up significantly: 'damage = 2 * (damage + 4)' assuming the player does not have The Inner Eye or Mutant Spider.</p>
+    <p>If a tear kills an enemy with more damage than needed, the tear travels through it and will do half damage to the next enemy it hits.</p>
+    <p>The order in which you take Polyphemus and the Mutant Spider items does NOT matter, the combination will be the same no matter which item you took first. Having Quad and Poly at the same time is not a damage down as long as you hit with 2 or more tears and the only damage down situation is if you have another tear modifier such as Mom's Knife or Brimstone which brings you back down to a single damage source.</p>
+	<p>Synergies: Chocolate Milk, Sacred Heart, Max's Head, Mutant Spider, Dr. Fetus, Brimstone, Mom's Knife, Cupid's Arrow, Technology 1 + 2, Mom's Eye, Tough Love, Ipecac</p>
+    <p class="tags">* damage modifier, passive item, white, black, blue, polywolyphemus,     </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="34.1" data-sid="170">
+	<a><div onclick="" class='item vitem itm170'></div>
+    <span>
+    <p class="item-title">Daddy Longlegs:</p>
+    <p class="itemid">(ItemID: 170)</p>
+    <p class="special">Special Item</p>
+    <p>A shadow follows Isaac and stomps on enemies at random intervals.</p>
+    <p>The Daddy Longlegs familiar does 20 damage per tick and usually hits twice per stomp, dealing a total of 40 damage. Damage stat upgrades do not increase this damage.</p>
+    <p>The leg does not hurt Isaac.</p>
+    <p class="unlock">UNLOCK: Unlocks by completing the 'The Purist' challenge.</p>
+    <p class="tags">* familiar, upgrade item, special item, unlockable item, passive item, white, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="138" data-sid="171">
+	<a><div onclick="" class='item vitem itm171'></div>
+    <span>
+    <p class="item-title">Spider Butt:</p>
+    <p class="itemid">(ItemID: 171)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Does 10 damage to all enemies in the room and slows down enemy movement and projectile speed.</p>
+    <p class="unlock">UNLOCK: Unlocks by completing the 'Spiderboy' challenge.</p>
+    <p>Recharge Time: 2 Rooms.</p>
+    <p class="tags">* active item, spacebar item, red, brown, unlockable item</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="127" data-sid="172">
+	<a><div onclick="" class='item vitem itm172'></div>
+    <span>
+    <p class="item-title">Sacrificial Dagger:</p>
+    <p class="itemid">(ItemID: 172)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Gives the player an orbital knife which does extremely high damage to anything it comes in contact with.</p>
+    <p>The sacrificial dagger does not block any shots.</p>
+    <p>The dagger does 15 damage per tick while it is in contact with something.</p>
+    <p>Synergises well with high health or items which give you invulnerability.</p>
+    <p class="unlock">UNLOCK: Unlock this item by completing the Cathedral with Eve.</p>
+    <p class="tags">* , unlockable item, passive item, red, grey, gray, knife party, stabby time, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="82.1" data-sid="173">
+	<a><div onclick="" class='item vitem itm173'></div>
+    <span>
+    <p class="item-title">Mitre:</p>
+    <p class="itemid">(ItemID: 173)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>An extra 50% chance that any non-specific heart spawns will become Soul hearts.</p>
+    <p>Can appear in the Angel Room.</p>
+    <p class="tags">* passive item, white, yellow,  </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="117" data-sid="174">
+	<a><div onclick="" class='item vitem itm174'></div>
+    <span>
+    <p class="item-title">Rainbow Baby:</p>
+    <p class="itemid">(ItemID: 174)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>A familiar which follows the player and shoots a random tear effect every shot.</p>
+    <p>Available effects include: Brother Bobby, Sister Maggy, Little Gish, Little Steve, Demon Baby, Ghost Baby and Harlequin Baby.</p>
+    <p class="unlock">UNLOCK: Unlock this item by completing the Cathedral with the Blue Baby character.</p>
+    <p class="tags">* , unlockable item, passive item, red, orange, yellow, green, blue, purple, violet, indigo, pink, ALL THE COLOURS, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="34" data-sid="175">
+	<a><div onclick="" class='item vitem itm175'></div>
+    <span>
+    <p class="item-title">Dad's Key:</p>
+    <p class="itemid">(ItemID: 175)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Upon activation, all closed doors in the current room will be opened.</p>
+    <p>This includes Challenge Rooms, the Devil Deal Room and standard rooms on the Chest floor. However, it is not guaranteed to work with Angel and Devil Deal rooms.</p>
+    <p>This does not work on rooms which normally need a key to open.</p>
+    <p>Item found in the Secret Room item pool.</p>
+    <p class="unlock">UNLOCK: Unlocks by completing the Chest with any character.</p>
+    <p>Recharge Time: 2 Rooms.</p>
+    <p class="tags">* , unlockable item, active item, spacebar item, yellow, brown</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="143" data-sid="176">
+	<a><div onclick="" class='item vitem itm176'></div>
+    <span>
+    <p class="item-title">Stem Cells:</p>
+    <p class="itemid">(ItemID: 176)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>+1 Health Up.</p>
+    <p>+0.16 Shot Speed Up.</p>
+    <p>(Base shot speed is 1.0 and Max shot speed is 1.4)</p>
+    <p class="tags">* passive item, red, bisnap </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="113" data-sid="177">
+	<a><div onclick="" class='item vitem itm177'></div>
+    <span>
+    <p class="item-title">Portable Slot:</p>
+    <p class="itemid">(ItemID: 177)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Does exactly what it says on the tin - Using the portable slot gives you the same effect as the Red Slot machine.</p>
+    <p>Using this in a boss room to spawn a blаck fly after defeating the boss will enable the player to leave the room and re-enter, which will refresh the boss room and therefore give you another item.</p>
+    <p>Recharge Time: Instant.</p>
+    <p class="tags">* active item, spacebar item, red,</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="60" data-sid="178">
+	<a><div onclick="" class='item vitem itm178'></div>
+    <span>
+    <p class="item-title">Holy Water:</p>
+    <p class="itemid">(ItemID: 178)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>When the player takes damage, the bottle breaks and leaves a pool on the floor which deals 8 damage (per tick) to enemies which walk into it, exactly like the Lemon Mishap effect.</p>
+    <p>This item has a known bug where most followers will be downgraded into Brother Bobby. Breaking the holy water will revert the familiar back to normal for the current room.</p>
+    <p class="tags">* passive item, blue, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="47" data-sid="179">
+	<a><div onclick="" class='item vitem itm179'></div>
+    <span>
+    <p class="item-title">Fate:</p>
+    <p class="itemid">(ItemID: 179)</p>
+    <p class="special">Special Item</p>
+    <p>The player gains the ability to fly and is given an eternal heart.</p>
+    <p>This item only has a 50% chance to be in the Golden Chest item pool.</p>
+    <p>If you find Pyro in the Secret Room that means Fate is definitely in the Golden Chest item pool because they are both attatched to the same random function when the game begins.</p>
+    <p class="tags">* , upgrade item, special item, passive item, blue,    </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="9.6" data-sid="180">
+	<a><div onclick="" class='item vitem itm180'></div>
+    <span>
+    <p class="item-title">The Black Bean:</p>
+    <p class="itemid">(ItemID: 180)</p>
+    <p class="special">Special Item</p>
+    <p>Upon taking damage, all enemies in close proximity will be affected by 5 poison damage and then a poison effect of 3.5 damage per tick</p>
+    <p>The effect is exactly the same as 'The Bean' item.</p>
+    <p class="tags">* , upgrade item, special item, black, passive item </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="191.1" data-sid="181">
+	<a><div onclick="" class='item vitem itm181'></div>
+    <span>
+    <p class="item-title">White Pony:</p>
+    <p class="itemid">(ItemID: 181)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Allows Isaac to fly while this item is held.</p>
+    <p>Has a spacebar effect which is the same as the Crack the Sky item effect.</p>
+    <p>Sets player speed to a static value of 1.5, unless current speed stat is higher.</p>
+    <p>If you're fighting the Conquest Boss and don't have White Pony, it will drop.</p>
+    <p>Recharge Time: 6 Rooms.</p>
+    <p class="tags">* active item, spacebar item, white,    </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="126" data-sid="182">
+	<a><div onclick="" class='item vitem itm182'></div>
+    <span>
+    <p class="item-title">Sacred Heart:</p>
+    <p class="itemid">(ItemID: 182)</p>
+    <p class="special">Special Item</p>
+    <p>Tears are now white, do a lot more damage, move slower across the screen and will also home in on enemies in the same effect as the Spoon Bender item.</p>
+    <p>Damage up significantly: damage = (damage * 2.3) + 1.</p>
+    <p>-0.4 Tears Down.</p>
+    <p>-0.25 Shot Speed Down.</p>
+    <p>+4.125 Range Up (Base range = 23).</p>
+    <p>Fully heals all current red heart containers.</p>
+    <p>+1 Soul heart.</p>
+    <p>Can appear in the Angel Room.</p>
+    <p>Getting multiple Sacred Hearts will only affect your range, tears and shot speed stats. The damage multiplier is the same.</p>
+    <p class="tags">* damage modifier, upgrade item, special item, passive item, red, yellow, orange, spyrothesheep,     </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="187" data-sid="183">
+	<a><div onclick="" class='item vitem itm183'></div>
+    <span>
+    <p class="item-title">Tooth Picks:</p>
+    <p class="itemid">(ItemID: 183)</p>
+    <p class="special">Special Item</p>
+    <p>+0.16 Shot Speed Up.</p>
+    <p>(Base shot speed is 1.0 and Max shot speed is 1.4)</p>
+    <p>This item turns your tears red but does NOT increase damage.</p>
+    <p>This item is falsely labelled as Tear Stat Up.</p>
+    <p class="tags">* upgrade item, special item, passive item, yellow, brown, NoTP, bisnap</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="59.1" data-sid="184">
+	<a><div onclick="" class='item vitem itm184'></div>
+    <span>
+    <p class="item-title">Holy Grail:</p>
+    <p class="itemid">(ItemID: 184)</p>
+    <p class="special">Special Item</p>
+    <p>Gives the player the ability to fly.</p>
+    <p>+1 Health Up.</p>
+    <p>Can appear in the Angel Room.</p>
+    <p class="tags">* , upgrade item, special item, passive item, yellow, brown,    </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="37" data-sid="185">
+	<a><div onclick="" class='item vitem itm185'></div>
+    <span>
+    <p class="item-title">Dead Dove:</p>
+    <p class="itemid">(ItemID: 185)</p>
+    <p class="special">Special Item</p>
+    <p>Gives the player flying and spectral tears.</p>
+    <p>This is the Angel Room equivalent of the 'Spirit of the Night' item.</p>
+    <p>Can appear in the Angel Room.</p>
+    <p class="tags">* , upgrade item, special item, passive item, white,    </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="12" data-sid="186">
+	<a><div onclick="" class='item vitem itm186'></div>
+    <span>
+    <p class="item-title">Blood Rights:</p>
+    <p class="itemid">(ItemID: 186)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Upon activation, this item takes one red heart and damages all enemies in the room for 40 damage.</p>
+    <p>If you spam press this item, the first use will take a whole heart but each subsequent use takes only half a heart for as long as you spam spacebar.</p>
+    <p class="unlock">UNLOCK: Unlock this item by completing Sheol as Samson.</p>
+    <p>Recharge Time: Instant.</p>
+    <p class="tags">* , unlockable item, active item, spacebar item, brown, grey, gray, namaztak</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="53" data-sid="187">
+	<a><div onclick="" class='item vitem itm187'></div>
+    <span>
+    <p class="item-title">Guppy's Hairball:</p>
+    <p class="itemid">(ItemID: 187)</p>
+    <p class="special">Special Item</p>
+    <p>Follows behind Isaac and can be swung around to deal damage on contact to enemies equal to:<br /> (3 + size * 2).</p>
+    <p>The hairball size starts at 1 and has a random chance to become larger each time it kills an enemy (up to a maximum of size = 6), with a probability of 1/x, where X is the current size of the hairball. At size one, the chance is 1/1; at size two, the chance is 1/2 etc.</p>
+    <p>The size of the hairball persists between rooms, but at the end of each floor it decreases in size by roughly half. The exact calculation is "size = floor(size * 0.5 + 0.5)"</p>
+    <p>This item does NOT count towards getting the Guppy transformation.</p>
+    <p class="eternal">ETERNAL MODE: This item counts towards getting the Guppy transformation if you are playing with the eternal DLC installed.</p>
+    <p class="unlock">UNLOCK: Unlocks by taking 3 of the 4 Guppy items and transforming into Guppy the Cat.</p>
+    <p class="tags">* familiar, upgrade item, special item, unlockable item, passive item, brown,  </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="6" data-sid="188">
+	<a><div onclick="" class='item vitem itm188'></div>
+    <span>
+    <p class="item-title">Abel:</p>
+    <p class="itemid">(ItemID: 188)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>A familiar which mirrors the player's movements across the room and shoots in the opposite direction.</p>
+    <p>Abel's tears do 3.5 damage each and do not scale with damage stat changes.</p>
+    <p class="unlock">UNLOCK: Unlock this item by completing the Cathedral with Cain.</p>
+    <p class="tags">* , unlockable item, passive item, brown, grey, gray, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="134" data-sid="189">
+	<a><div onclick="" class='item vitem itm189'></div>
+    <span>
+    <p class="item-title">SMB Super Fan:</p>
+    <p class="itemid">(ItemID: 189)</p>
+    <p class="special">Special Item</p>
+    <p>+1 Health Up.</p>
+    <p>+0.3 Damage.</p>
+    <p>+0.2 Tears Up.</p>
+    <p>-0.2 Player Speed Down.</p>
+    <p>The speed down from this item is actually a bug as confirmed by Edmund, which would make sense because Meat Boy is notorious for going fast!</p>
+    <p class="unlock">UNLOCK: Unlocks by completing the 'MEAT 4 EVAR' challenge.</p>
+    <p class="tags">* damage up, tears up, upgrade item, special item, unlockable item, passive item, super meat boy, team meat, red, gray, grey, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="115" data-sid="190">
+	<a><div onclick="" class='item vitem itm190'></div>
+    <span>
+    <p class="item-title">Pyro:</p>
+    <p class="itemid">(ItemID: 190)</p>
+    <p class="special">Special Item</p>
+    <p>+99 bombs.</p>
+    <p>Has a 50% chance to be in the Secret room item pool.</p>
+    <p>If you find Fate in a Golden Chest that means Pyro is definitely in the Secret Room item pool because they are both attatched to the same random function when the game begins.</p>
+    <p class="tags">* , upgrade item, special item, gray, grey, passive item, white, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="1.2" data-sid="191">
+	<a><div onclick="" class='item vitem itm191'></div>
+    <span>
+    <p class="item-title">3 Dollar Bill:</p>
+    <p class="itemid">(ItemID: 191)</p>
+    <p class="special">Special Item</p>
+    <p>Gives a random tear effect in each room.</p>
+    <p>Tear effects include: The Sad Onion, The Inner Eye, Spoon Bender, My Reflection, Number One, Lucky Foot, Magneto, Mom's Contact, Ouija Board, Speed Ball, Tough Love.</p>
+    <p>Since it gives the magneto effect, you can repeatedly leave and re-enter a room to obtain pick-ups which you could not normally get.</p>
+    <p class="tags">* , upgrade item, special item<, passive item, tear modifier, pink, purple, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="151" data-sid="192">
+	<a><div onclick="" class='item vitem itm192'></div>
+    <span>
+    <p class="item-title">Telepathy for Dummies:</p>
+    <p class="itemid">(ItemID: 192)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Gives the Spoon Bender (homing shots) effect for the current room.</p>
+    <p>Recharge Time: 2 Rooms.</p>
+    <p class="tags">* active item, spacebar item, yellow, book, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="81" data-sid="193">
+	<a><div onclick="" class='item vitem itm193'></div>
+    <span>
+    <p class="item-title">MEAT!:</p>
+    <p class="itemid">(ItemID: 193)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>+1 Health Up.</p>
+    <p>+0.3 Damage.</p>
+    <p>This item is falsely marked as a Tears Stat Up on the in-game description.</p>
+    <p class="tags">* damage up, passive item, red, brown, bone, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="77" data-sid="194">
+	<a><div onclick="" class='item vitem itm194'></div>
+    <span>
+    <p class="item-title">Magic 8 Ball:</p>
+    <p class="itemid">(ItemID: 194)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>+0.16 Shot Speed Up.</p>
+    <p>Drops one random Tarot card.</p>
+    <p>Shows the location of the boss room on the map.</p>
+    <p>(Base shot speed is 1.0 and Max shot speed is 1.4)</p>
+    <p>This item is falsely marked as a Tears Stat Up on the in-game description.</p>
+    <p class="tags">* passive item, black, grey, gray, bisnap</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="85" data-sid="195">
+	<a><div onclick="" class='item vitem itm195'></div>
+    <span>
+    <p class="item-title">Mom's Coin Purse:</p>
+    <p class="itemid">(ItemID: 195)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Spawns four random pills around the player.</p>
+    <p class="tags">* passive item, yellow, brown, pills here</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="141" data-sid="196">
+	<a><div onclick="" class='item vitem itm196'></div>
+    <span>
+    <p class="item-title">Squeezy:</p>
+    <p class="itemid">(ItemID: 196)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Spawns 2 Soul hearts on the floor.</p>
+    <p>+0.4 Tears Up.</p>
+    <p class="tags">* , tears up, mistah squeezy, mr squeezy, passive item, yellow, pink, white, lethalfrag, lethal frag,</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="65" data-sid="197">
+	<a><div onclick="" class='item vitem itm197'></div>
+    <span>
+    <p class="item-title">Jesus Juice:</p>
+    <p class="itemid">(ItemID: 197)</p>
+    <p class="special">Special Item</p>
+    <p>+0.5 Damage.</p>
+    <p>+2.75 Range up (Base range = 23).</p>
+    <p>This item is falsely marked as a Tears Stat Up on the in-game description.</p>
+    <p class="tags">* damage up, upgrade item, special item, passive item, purple, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="25" data-sid="198">
+	<a><div onclick="" class='item vitem itm198'></div>
+    <span>
+    <p class="item-title">Box:</p>
+    <p class="itemid">(ItemID: 198)</p>
+    <p class="notspecial">Not Spеcial</p>
+    <p>Spawns one of each pick-up.</p>
+    <p>Pickups: 1 heart, 1 key, 1 bomb, 1 coin, 1 card, 1 pill, 1 trinket and can spawn variations of each.</p>
+    <p>This item does not decrease your Player Speed which is sometimes believed.</p>
+    <p class="tags">* passive item, brown, yellow, hobo</p>
+    </span>
+    </a>
+</li>
+
+<div class="itm-popup vanilla-popup" id="popup"></div>
+</div>
+<div class="trinkets-container">
+	<h2>Trinkets</h2>
+<li class="textbox" data-tid="1" data-sid="29">
+	<a><div onclick="" class='vanillatrinket item junxx29'></div>
+    <span>
+    <p class="item-title">Fish Head:</p>
+    <p class="itemid">(TrinketID: 29)</p>
+    <p>Every time you get hit, you spawn one bluе fly.</p>
+    <p>Bluе flies do twice the player's damage.</p>
+    <p class="unlock">* UNLOCK: Unlocks by completing the 'Lord of the Flies' challenge.</p>
+    <p class="tags">* , unlockable item, green, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="2" data-sid="30">
+	<a><div onclick="" class='vanillatrinket item junxx30'></div>
+    <span>
+    <p class="item-title">Pinky Eye:</p>
+    <p class="itemid">(TrinketID: 30)</p>
+    <p>1/10 chance to make a poison tear which also does 4 poison damage per tick.</p>
+    <p>The chance for the poison effect to activate stacks with other items which give tears a chance to apply poison to enemies.</p>
+    <p>If you have technology, the Pinky Eye has a 1/10 chance to temporarily disable The Common Cold effect if you have it.</p>
+    <p class="tags">* pink, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="3" data-sid="31">
+	<a><div onclick="" class='vanillatrinket item junxx31'></div>
+    <span>
+    <p class="item-title">Push Pin:</p>
+    <p class="itemid">(TrinketID: 31)</p>
+    <p>1/10 chance to make a spectral and piercing tear.</p>
+    <p class="tags">* blue, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="4" data-sid="32">
+	<a><div onclick="" class='vanillatrinket item junxx32'></div>
+    <span>
+    <p class="item-title">Liberty Cap:</p>
+    <p class="itemid">(TrinketID: 32)</p>
+    <p>1/4 chance to give one of the Mushroom item effects or the Compass effect</p>
+    <p>Effects include: Compass, Mini Mush, Odd Mushroom (thin), Odd Mushroom (thick).</p>
+    <p>You can force the game to temporarily give you the Compass effect by repeatedly going back and forth through the same door, so that you can see where all the rooms with map icons are located.</p>
+    <p>It is not possible to farm infinite soul hearts if you have Guppy's Paw and walk between rooms until you get the Odd Thick Mushroom effect.</p>
+    <p class="tags">* grey, gray,</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="5" data-sid="33">
+	<a><div onclick="" class='vanillatrinket item junxx33'></div>
+    <span>
+    <p class="item-title">Umbilical Cord:</p>
+    <p class="itemid">(TrinketID: 33)</p>
+    <p>If you take damage which leaves you on one half heart left, you gain Little Steve for the remainder of the room.</p>
+    <p>This effect does take Soul hearts into account, unlike the effects of other items such as The Polaroid of Whore of Babylon.</p>
+    <p class="tags">* pink, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="6" data-sid="34">
+	<a><div onclick="" class='vanillatrinket item junxx34'></div>
+    <span>
+    <p class="item-title">Child's Heart:</p>
+    <p class="itemid">(TrinketID: 34)</p>
+    <p>An additional 1/10 chance to give you a heart at the end of a room.</p>
+    <p>An additional 2/3 chance to give you a heart while opening a chest.</p>
+    <p class="tags">* red</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="7" data-sid="35">
+	<a><div onclick="" class='vanillatrinket item junxx35'></div>
+    <span>
+    <p class="item-title">Curved Horn:</p>
+    <p class="itemid">(TrinketID: 35)</p>
+    <p>+2 Damage Up.</p>
+    <p>This damage is added to total Effective Damage after calculations and character damage modifiers, therefore it is a static +2 damage.</p>
+    <p class="unlock">* UNLOCK: Unlock this item by completing the Cathedral with Judas.</p>
+    <p class="tags">* damage up, unlockable item, gray, grey, brown, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="8" data-sid="36">
+	<a><div onclick="" class='vanillatrinket item junxx36'></div>
+    <span>
+    <p class="item-title">Rusted Key:</p>
+    <p class="itemid">(TrinketID: 36)</p>
+    <p class="unlock">* This is a dead trinket and has no effect whatsoever. Below is what the trinket should do if it was to work properly:</p>
+    <p>An additional 1/10 chance to give you a key OR a golden chest at the end of a room, with equal chance.</p>
+    <p>An additional 2/3 chance to give you a key while opening a chest.</p>
+    <p class="tags">* brown, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="9" data-sid="37">
+	<a><div onclick="" class='vanillatrinket item junxx37'></div>
+    <span>
+    <p class="item-title">Goat Hoof:</p>
+    <p class="itemid">(TrinketID: 37)</p>
+    <p>+0.15 Player Speed Up.</p>
+    <p>This speed increase can go over the speed cap of 200%.</p>
+    <p class="tags">* grey, gray, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="10" data-sid="38">
+	<a><div onclick="" class='vanillatrinket item junxx38'></div>
+    <span>
+    <p class="item-title">Mom's Pearl:</p>
+    <p class="itemid">(TrinketID: 38)</p>
+    <p>An extra 10% chance that any non-specific heart drops will become a Soul heart.</p>
+    <p>This does stack with the Mitre effect.</p>
+    <p class="tags">* white, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="11" data-sid="39">
+	<a><div onclick="" class='vanillatrinket item junxx39'></div>
+    <span>
+    <p class="item-title">Cancer:</p>
+    <p class="itemid">(TrinketID: 39)</p>
+    <p>Tear delay decreased by 2.</p>
+    <p>This increases tear rate by different amounts based on your current tears stat. At a delay of 24 (e.g. Polyphemus), this trinket adds 25% more tear rate. At max fire rate this adds 200% more tear rate, therefore is more useful as you gain more tear stat.</p>
+    <p>This trinket can break the tear rate of fire cap.</p>
+    <p>This trinket does not reduce the drop chance of hearts of any kind, which is often believed to be true.</p>
+    <p class="tags">* , tears up, black, gray, grey, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="12" data-sid="40">
+	<a><div onclick="" class='vanillatrinket item junxx40'></div>
+    <span>
+    <p class="item-title">Red Patch:</p>
+    <p class="itemid">(TrinketID: 40)</p>
+    <p>1/5 chance when taking damage to get +3 'razor' points.</p>
+    <p>+1.8 damage up if the effect activates.</p>
+    <p>Damage up calculation with regards to razor points: 'damage = damage + (razor points * 0.6)'</p>
+    <p class="tags">* damage modifier, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="13" data-sid="41">
+	<a><div onclick="" class='vanillatrinket item junxx41'></div>
+    <span>
+    <p class="item-title">Match Stick:</p>
+    <p class="itemid">(TrinketID: 41)</p>
+    <p>An additional 1/10 chance to give you a bomb at the end of a room.</p>
+    <p>An additional 2/3 chance to give you a bomb while opening a chest.</p>
+    <p class="tags">* brown, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="14" data-sid="42">
+	<a><div onclick="" class='vanillatrinket item junxx42'></div>
+    <span>
+    <p class="item-title">Lucky Toe:</p>
+    <p class="itemid">(TrinketID: 42)</p>
+    <p>Increases chance to drop an item at the end of the room by ~10%.</p>
+    <p>If you also have the lucky foot, this item only increases drop chance by 2%.</p>
+    <p class="unlock">* UNLOCK: Unlocks by completing the '7 Years Bad Luck' challenge.</p>
+    <p class="tags">* , unlockable item, pink, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="15" data-sid="43">
+	<a><div onclick="" class='vanillatrinket item junxx43'></div>
+    <span>
+    <p class="item-title">Cursed Skull:</p>
+    <p class="itemid">(TrinketID: 43)</p>
+    <p>When you are hit with 1/2 a rеd heart remaining, you are teleported to the previous room.</p>
+    <p>This does not count Soul hearts and therefore this item will teleport the ??? character every hit.</p>
+    <p class="tags">* white, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="16" data-sid="44">
+	<a><div onclick="" class='vanillatrinket item junxx44'></div>
+    <span>
+    <p class="item-title">Safety Cap:</p>
+    <p class="itemid">(TrinketID: 44)</p>
+    <p>An additional 1/10 chance to give you a pill at the end of a room.</p>
+    <p>An additional 2/3 chance to give you a pill while opening a chest.</p>
+    <p class="tags">* white, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="17" data-sid="45">
+	<a><div onclick="" class='vanillatrinket item junxx45'></div>
+    <span>
+    <p class="item-title">Ace of Spades:</p>
+    <p class="itemid">(TrinketID: 45)</p>
+    <p>An additional 1/10 chance to give you a tarot card at the end of a room.</p>
+    <p>An additional 2/3 chance to give you a tarot card while opening a chest.</p>
+    <p class="tags">* white, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="18" data-sid="46">
+	<a><div onclick="" class='vanillatrinket item junxx46'></div>
+    <span>
+    <p class="item-title">Isaac's Fork:</p>
+    <p class="itemid">(TrinketID: 46)</p>
+    <p>1/10 chance to heal half a heart after clearing a room.</p>
+    <p class="tags">* grey, gray, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="19" data-sid="47">
+	<a><div onclick="" class='vanillatrinket item junxx47'></div>
+    <span>
+    <p class="item-title">The Polaroid:</p>
+    <p class="itemid">(TrinketID: 47)</p>
+    <p>Grants access to the Chest floor if equipped while fighting the Isaac boss fight.</p>
+    <p>Grants 150 frames (5 seconds) of invincibility when you are hit with 1/2 heart remaining. This effect does not count Soul hearts and will give invulnerability every time the player gets hit if they only have Soul hearts or is playing as ???.</p>
+    <p>100% drop chance from the Mom's Foot boss fight.</p>
+    <p>If you manage to empty the Trinket Pool (i.e. see them all drop) before getting to the Mom's Foot boss fight, The Polaroid will not drop here.</p>
+    <p>In the 1.5 version of the game (Most unholy edition), this trinket only drops if a devil room spawns on the depths 2 (Note: The door won't appear because of the Mom fight, but it triggers behind the scenes).</p>
+    <p class="unlock">* UNLOCK: Unlock this item by completing the Cathedral 6 times.</p>
+    <p class="tags">* , unlockable item, photograph, white, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="20" data-sid="48">
+	<a><div onclick="" class='vanillatrinket item junxx48'></div>
+    <span>
+    <p class="item-title">A Missing Page:</p>
+    <p class="itemid">(TrinketID: 48)</p>
+    <p>1/20 chance to deal 40 damage to all enemies in the room when the player takes damage.</p>
+    <p>Gives the player a second free hit on the Blood Donation Machine if the effect procs.</p>
+    <p class="tags">* brown, red, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="21" data-sid="49">
+	<a><div onclick="" class='vanillatrinket item junxx49'></div>
+    <span>
+    <p class="item-title">Bloody Penny:</p>
+    <p class="itemid">(TrinketID: 49)</p>
+    <p>50% chance to gain a half heart when picking up any type of coin.</p>
+    <p>Synergises very well with Blood Donation machines or the IV bag, often allowing the player to refill their hearts and max out on coins.</p>
+    <p class="unlock">* UNLOCK: Unlock this item by completing the Cathedral as Samson.</p>
+    <p class="tags">* , unlockable item, red, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="22" data-sid="50">
+	<a><div onclick="" class='vanillatrinket item junxx50'></div>
+    <span>
+    <p class="item-title">Burnt Penny:</p>
+    <p class="itemid">(TrinketID: 50)</p>
+    <p>50% chance to gain a bomb when picking up any type of coin.</p>
+    <p class="unlock">* UNLOCK: Unlocks by completing the 'Large Marge' challenge.</p>
+    <p class="tags">* , unlockable item, black, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="23" data-sid="51">
+	<a><div onclick="" class='vanillatrinket item junxx51'></div>
+    <span id="flat">
+    <p class="item-title">Flat Penny:</p>
+    <p class="itemid">(TrinketID: 51)</p>
+    <p>50% chance to gain a key when picking up any type of coin.</p>
+    <p class="tags">* grey, gray, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="24" data-sid="52">
+	<a><div onclick="" class='vanillatrinket item junxx52'></div>
+    <span>
+    <p class="item-title">Counterfeit Penny:</p>
+    <p class="itemid">(TrinketID: 52)</p>
+    <p>50% chance to give +1 coin when picking up any type of coin, which is automatically added to the total.</p>
+    <p>This can only drop from breaking a Golden Poop with 1/3 chance and is not in the normal Trinket pool.</p>
+    <p class="unlock">* UNLOCK: Unlocks by completing the 'Isaac was good today' challenge.</p>
+    <p class="tags">* , unlockable item, yellow, golden, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="25" data-sid="53">
+	<a><div onclick="" class='vanillatrinket item junxx53'></div>
+    <span>
+    <p class="item-title">The Tick:</p>
+
+    <p class="itemid">(TrinketID: 53)</p>
+    <p>This trinket cannot be replaced when you pick it up, meaning you are unable to go to the Chest floor unless you also have the Mom's Purse effect.</p>
+    <p>When you enter a boss room, The Tick recovers 1 heart.</p>
+    <p>Immediately removes 15% of an enemy's health if it has over 60hp (All bosses except Larry Jr. have over 60hp).</p>
+    <p class="tags">* brown, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="26" data-sid="54">
+	<a><div onclick="" class='vanillatrinket item junxx54'></div>
+    <span>
+    <p class="item-title">Isaac's Head:</p>
+    <p class="itemid">(TrinketID: 54)</p>
+    <p>While held, gives the player a familiar which follows the player and shoots piercing tears.</p>
+    <p>Isaac's Head's tears do 3.5 damage each and do not scale with damage stat changes.</p>
+    <p>This familiar can sometimes cause a glitch which causes a follower to convert into another. Example: If you have Sister Maggy, Harlequin Baby, Little Gish and Isaac's Head, Little Gish will turn into a second Sister Maggy.</p>
+    <p class="unlock">* UNLOCK: Unlock this item by completing the Chest as Isaac.</p>
+    <p class="tags">* , unlockable item, pink, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="27" data-sid="55">
+	<a><div onclick="" class='vanillatrinket item junxx55'></div>
+    <span>
+    <p class="item-title">Maggy's Faith:</p>
+    <p class="itemid">(TrinketID: 55)</p>
+    <p>Grants the player an eternal heart at the beginning of every floor.</p>
+    <p>This effect works if you refresh the floor with the Forget Me Now item.</p>
+    <p class="unlock">* UNLOCK: Unlock this item by completing the Chest as Maggy.</p>
+    <p class="tags">* , unlockable item, white, yellow, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="28" data-sid="56">
+	<a><div onclick="" class='vanillatrinket item junxx56'></div>
+    <span>
+    <p class="item-title">Judas' Tongue:</p>
+    <p class="itemid">(TrinketID: 56)</p>
+    <p>Items which cost 2 heart containers in a deal with the Devil will be reduced to 1 heart instead.</p>
+    <p>All 1 heart deals and 3 Soul heart deals are not reduced.</p>
+    <p class="unlock">* UNLOCK: Unlock this item by completing the Chest as Judas. However this will grant you the achievement "Cains Eye".</p>
+    <p class="tags">* , unlockable item, red, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="29" data-sid="57">
+	<a><div onclick="" class='vanillatrinket item junxx57'></div>
+    <span>
+    <p class="item-title">???'s Soul:</p>
+    <p class="itemid">(TrinketID: 57)</p>
+    <p>Creates a familiar which moves around the room in a similar fashion to The Peeper.</p>
+    <p>Other familiars the player currently has may follow ???'s soul instead of the player.</p>
+    <p>???'s Soul's tears do 3.5 damage each and do not scale with damage stat changes.</p>
+    <p class="unlock">* UNLOCK: Unlock this item by completing the Chest as Eve. However this will grant you the achievement "Judas' Tongue".</p>
+    <p class="tags">* , unlockable item, blue, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="30" data-sid="58">
+	<a><div onclick="" class='vanillatrinket item junxx58'></div>
+    <span>
+    <p class="item-title">Samson's Lock:</p>
+    <p class="itemid">(TrinketID: 58)</p>
+    <p>When you kill an enemy, you have a 1/15 chance to get +0.5 damage up (up to a cap of 2.3).</p>
+    <p>Similar effect to the Bloody Lust item, however the rage effect is not guaranteed with Samson's Lock.</p>
+    <p>The rage effect from this trinket does stack with the 'Bloody Lust' item.</p>
+    <p class="unlock">* UNLOCK: Unlock this item by completing the Chest as Samson. However this will grant you the achievement "Eves Bird Foot".</p>
+    <p class="tags">* damage modifier, unlockable item, brown, hair,</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="31" data-sid="59">
+	<a><div onclick="" class='vanillatrinket item junxx59'></div>
+    <span>
+    <p class="item-title">Cain's Eye:</p>
+    <p class="itemid">(TrinketID: 59)</p>
+    <p>Gives a 25% chance to reveal map icons at the start of a new floor (The same effect as the Compass).</p>
+    <p class="unlock">* UNLOCK: Unlock this item by completing the Chest as Cain. However this will grant you the achievement "???s Soul".</p>
+    <p class="tags">* , unlockable item, white,      </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="32" data-sid="60">
+	<a><div onclick="" class='vanillatrinket item junxx60'></div>
+    <span>
+    <p class="item-title">Eve's Bird Foot:</p>
+    <p class="itemid">(TrinketID: 60)</p>
+    <p>Gives a 1/20 chance when you kill something to spawn the Dead Bird familiar for the current room.</p>
+    <p class="unlock">* UNLOCK: Unlock this item by completing the Chest as ???. However this will grant you the achievement "Samsons Lock".</p>
+    <p class="tags">* , unlockable item, gray, grey, </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="33" data-sid="61">
+	<a><div onclick="" class='vanillatrinket item junxx61'></div>
+    <span>
+    <p class="item-title">The Left Hand:</p>
+    <p class="itemid">(TrinketID: 61)</p>
+    <p>Replaces chests with Red Chests.</p>
+    <p>This also affects Golden chests</p>
+    <p class="unlock">* UNLOCK: Unlocks by defeating the Ultra Pride mini-boss fight.</p>
+    <p class="tags">* , unlockable item, grey, gray, red</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="666" data-sid="666">
+	<a><div onclick="" class='vanillatrinket item junxx666'></div>
+    <span>
+    <p class="item-title">Game Squid:</p>
+    <p>Gives a 20% chance to fire a black tar tear, which slows down enemies if hit</p>
+    <p>Only available in the Eternal Edition DLC update</p>
+    <p class="tags">* </p>
+    </span>
+    </a>
+</li>
+</div>
+<div class="tarot-container">
+	<h2>Tarot Cards</h2>
+<li class="textbox" data-tid="1" data-sid="11">
+	<a><div onclick="" class='vanillacard item card0'></div>
+    <span>
+    <p class="item-title">O - The Fool:</p>
+    <p class="itemid">(CardID: 11)</p>
+    <p>Teleports the player to the starting room of the current floor.</p>
+    <p>Has a limited number of uses, however it can allow you to teleport out of curse rooms, challenge rooms and the Mom's Foot boss fight.</p>
+    <p class="tags">* </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="2" data-sid="12">
+	<a><div onclick="" class='vanillacard item card1'></div>
+    <span>
+    <p class="item-title">I - The Magician:</p>
+    <p class="itemid">(CardID: 12)</p>
+    <p>For the current room, tears now have the Spoon Bender effect, which allows them to curve towards enemies and gives them a purрle appearance.</p>
+    <p class="tags">* </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="3" data-sid="13">
+	<a><div onclick="" class='vanillacard item card2'></div>
+    <span>
+    <p class="item-title">II - The High Priestess:</p>
+    <p class="itemid">(CardID: 25)</p>
+    <p>Summons Mom's foot which will stomp on a random enemy in the current room, dealing massive damage.</p>
+    <p>If no enemies are in the current room, the foot will target Isaac (and do damage if it hits), however it can be used to break rocks or open secret rooms.</p>
+    <p>There is a known glitch with this card where if you pause the game at the perfect moment when the foot comes down, the shadow will stay on screen and stomp for a second time. This can loop infinitely as long as you can pause the game at the exact moment. Very hard to achieve.</p>
+    <p class="tags">* </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="4" data-sid="14">
+	<a><div onclick="" class='vanillacard item card3'></div>
+    <span>
+    <p class="item-title">III - The Empress:</p>
+    <p class="itemid">(CardID: 26)</p>
+    <p>Gives the player the Whore of Babylon effect with higher damage (3.375 base damage increase) and +0.45 Player Speed Up for the current room.</p>
+    <p class="tags">* speed up</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="5" data-sid="15">
+	<a><div onclick="" class='vanillacard item card4'></div>
+    <span>
+    <p class="item-title">IV - The Emperor:</p>
+    <p class="itemid">(CardID: 22)</p>
+    <p>Teleports the player to the Boss room on the current floor.</p>
+    <p>If used after you defeat the Mom's Foot boss fight, it allows you to exit the room again.</p>
+    <p class="tags">* </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="6" data-sid="16">
+	<a><div onclick="" class='vanillacard item card5'></div>
+    <span>
+    <p class="item-title">V - The Hierophant:</p>
+    <p class="itemid">(CardID: 24)</p>
+    <p>Spawns 2 Soul hearts on the floor.</p>
+    <p class="tags">*</p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="7" data-sid="17">
+	<a><div onclick="" class='vanillacard item card6'></div>
+    <span>
+    <p class="item-title">VI - The Lovers:</p>
+    <p class="itemid">(CardID: 18)</p>
+    <p>Spawns 2 red hearts on the floor.</p>
+    <p class="tags">* </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="8" data-sid="18">
+	<a><div onclick="" class='vanillacard item card7'></div>
+    <span>
+    <p class="item-title">VII - The Chariot:</p>
+    <p class="itemid">(CardID: 17)</p>
+    <p>Grants the same effect as 'My Little Unicorn', which is 180 frames (6 seconds) of invincibility and causes damage to enemies on contact.</p>
+    <p>+0.28 Player Speed Up for the duration.</p>
+    <p class="tags">* </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="9" data-sid="19">
+	<a><div onclick="" class='vanillacard item card8'></div>
+    <span>
+    <p class="item-title">VIII - Justice:</p>
+    <p class="itemid">(CardID: 20)</p>
+    <p>Spawns 1 bomb, 1 key, 1 coin, 1 heart, which can be random variants of each.</p>
+    <p class="tags">* </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="10" data-sid="20">
+	<a><div onclick="" class='vanillacard item card9'></div>
+    <span>
+    <p class="item-title">IX - The Hermit:</p>
+    <p class="itemid">(CardID: 13)</p>
+    <p>Teleports the player to the Shop.</p>
+    <p>On or below the Womb, this acts as a random teleport, since there are no shops on those floors.</p>
+    <p class="tags">* </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="11" data-sid="21">
+	<a><div onclick="" class='vanillacard item card10'></div>
+    <span>
+    <p class="item-title">X - Wheel of Fortune:</p>
+    <p class="itemid">(CardID: 7)</p>
+    <p>Spawns a Slot Machine or a Fortune Machine.</p>
+    <p>If you spawn a slot machine in the super-secret room that has an eternal heart in it, all hearts that spawn from the slot machine will be eternal hearts.</p>
+    <p>If you spawn a slot machine in the super-secret room that has a Fortune Teller in it, the card will force the spawned machine to be a Fortune Teller every time.</p>
+    <p>If the card is used in the Boss room after you beat it and you manage to spawn a blаck fly with the slot machine, this can be used to refresh the Boss room by leaving a re-entering the room.</p>
+    <p class="tags">* </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="12" data-sid="22">
+	<a><div onclick="" class='vanillacard item card11'></div>
+    <span>
+    <p class="item-title">XI - Strength:</p>
+    <p class="itemid">(CardID: 10)</p>
+    <p>Gives the player the Magic Mushroom effect, which increases size, damage and gives 1 extra heart container for the current room.</p>
+    <p class="tags">* </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="13" data-sid="23">
+	<a><div onclick="" class='vanillacard item card12'></div>
+    <span>
+    <p class="item-title">XII - The Hanged Man:</p>
+    <p class="itemid">(CardID: 15)</p>
+    <p>Gives the player the flying effect for the current room, allowing the player to fly over obstacles in the room.</p>
+    <p>This card is useless if you have any item which allows you to permanently fly.</p>
+    <p class="tags">* </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="14" data-sid="24">
+	<a><div onclick="" class='vanillacard item card13'></div>
+    <span>
+    <p class="item-title">XIII - Death:</p>
+    <p class="itemid">(CardID: 9)</p>
+    <p>Does 60 damage to all enemies in the room.</p>
+    <p class="tags">* </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="15" data-sid="25">
+	<a><div onclick="" class='vanillacard item card14'></div>
+    <span>
+    <p class="item-title">XIV - Temperance:</p>
+    <p class="itemid">(CardID: 21)</p>
+    <p>Spawns a Blood Donation Machine.</p>
+    <p>This card is best saved and spawned directly next to another Blood Donation Machine to enable you to play both machines with a single half-heart.</p>
+    <p>Using Blood Donation Machines or picking up the Blood Bag does not increase the chance at a God/Angel/Devil Room to spawn, as it is sometimes believed.</p>
+    <p class="tags">* </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="16" data-sid="26">
+	<a><div onclick="" class='vanillacard item card15'></div>
+    <span>
+    <p class="item-title">XV - The Devil:</p>
+    <p class="itemid">(CardID: 8)</p>
+    <p>Gives the Book of Belial effect for the current room.</p>
+    <p>Adds a x1.5 damage multiplier ONLY if the player has 'Blood of the Martyr'.</p>
+    <p>+2 Damage.</p>
+    <p class="tags">* damage up </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="17" data-sid="27">
+	<a><div onclick="" class='vanillacard item card16'></div>
+    <span>
+    <p class="item-title">XVI - The Tower:</p>
+    <p class="itemid">(CardID: 23)</p>
+    <p>Spawns six troll bombs at random locations in the current room.</p>
+    <p class="tags">* </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="18" data-sid="28">
+	<a><div onclick="" class='vanillacard item card17'></div>
+    <span>
+    <p class="item-title">XVII - The Stars:</p>
+    <p class="itemid">(CardID: 28)</p>
+    <p>Teleports the player to the Item Room.</p>
+    <p>On or below the Womb, this acts as a random teleport, since there are no item rooms on those floors.</p>
+    <p class="tags">* </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="19" data-sid="29">
+	<a><div onclick="" class='vanillacard item card18'></div>
+    <span>
+    <p class="item-title">XVIII - The Moon:</p>
+    <p class="itemid">(CardID: 14)</p>
+    <p>Telepots the player to the Secret Room.</p>
+    <p class="tags">* </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="20" data-sid="30">
+	<a><div onclick="" class='vanillacard item card19'></div>
+    <span>
+    <p class="item-title">XIX - The Sun:</p>
+    <p class="itemid">(CardID: 27)</p>
+    <p>A card with three uses: A full heal, damages all enemies in the current room for 100 damage and reveals the entire map for the current floor (Treasure Map + The Compass).</p>
+    <p class="eternal">HARD MODE: Only restores 7 red hearts instead of a full heal.</p>
+    <p class="tags">* </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="21" data-sid="31">
+	<a><div onclick="" class='vanillacard item card20'></div>
+    <span>
+    <p class="item-title">XX - Judgement:</p>
+    <p class="itemid">(CardID: 16)</p>
+    <p>Spawns a beggar.</p>
+    <p>Any beggar spawned has a 33% chance to become a devil beggar.</p>
+    <p>Normal beggars are guaranteed to drop something after 8 coins.</p>
+    <p>Devil beggars have a 1/4 chance to drop something (1/3 if you have the lucky foot).</p>
+    <p>The beggar will pay out items related to the current room (or health increasing items), which can be used to exploit the game in a number of ways. Angel Rooms, Devil Deal Rooms and Curse rooms will drop items from their relevant item pools.</p>
+    <p class="tags">* </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="22" data-sid="32">
+	<a><div onclick="" class='vanillacard item card21'></div>
+    <span>
+    <p class="item-title">XXI - The World:</p>
+    <p class="itemid">(CardID: 19)</p>
+    <p>Reveals the entire map and shows the icons for every room which has one.</p>
+    <p>This is completely useless if you currently have both the Treasure Map and The Compass.</p>
+    <p class="tags">* </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="23" data-sid="33">
+	<a><div onclick="" class='vanillacard item cardspades'></div>
+    <span>
+    <p class="item-title">2 of Spades:</p>
+    <p class="itemid">(CardID: 70)</p>
+    <p>Doubles the number of keys you have.</p>
+    <p>If you have no keys, it gives you two.</p>
+    <p class="tags">* </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="24" data-sid="34">
+	<a><div onclick="" class='vanillacard item cardclubs'></div>
+    <span>
+    <p class="item-title">2 of Clubs:</p>
+    <p class="itemid">(CardID: 71)</p>
+    <p>Doubles the number of Bombs you have.</p>
+    <p>If you have no bombs, it gives you two.</p>
+    <p class="tags">* </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="25" data-sid="35">
+	<a><div onclick="" class='vanillacard item cardhearts'></div>
+    <span>
+    <p class="item-title">2 of Hearts:</p>
+    <p class="itemid">(CardID: 72)</p>
+    <p>Doubles your current red hearts up to full health.</p>
+    <p>If you have half a heart left, the card recovers your first two heart containers.</p>
+    <p>This card is useless for the Bluе Baby.</p>
+    <p class="tags">* </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="26" data-sid="36">
+	<a><div onclick="" class='vanillacard item carddiamonds'></div>
+    <span>
+    <p class="item-title">2 of Diamonds:</p>
+    <p class="itemid">(CardID: 73)</p>
+    <p>Doubles the number of coins you have.</p>
+    <p>If you have no coins, it gives you two.</p>
+    <p class="tags">* </p>
+    </span>
+    </a>
+</li>
+
+<li class="textbox" data-tid="27" data-sid="37">
+	<a><div onclick="" class='vanillacard item cardjoker'></div>
+    <span>
+    <p class="item-title">The Joker:</p>
+    <p class="itemid">(CardID: 74)</p>
+    <p>Teleports you to the Devil Deal Room on the current floor.</p>
+    <p>Has a small chance to fail and teleport you to a random room.</p>
+    <p>The Devil Room can be replaced by an Angel Room or even contain the Krampus boss fight.</p>
+    <p>In the Womb/Utero 2, the devil room will still contain a trap door down to Sheol when accessed via use of this card.</p>
+    <p class="tags">* </p>
+    </span>
+    </a>
+</li>
+</div>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="https://tboi.com/assets/vendor/jquery.tinysort.min.js"></script>
+<script src="https://tboi.com/assets/vendor/underscore-min.js"></script>
+<script src="https://tboi.com/assets/scripts/main.js?v=202104211315"></script>
+</body>
