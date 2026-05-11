@@ -3,33 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>The Binding of Isaac</title>
+    <title>Isaac Fullscreen</title>
     <style>
-        /* Removes all margins and centers the game perfectly */
-        body, html {
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
             width: 100%;
             height: 100%;
+            background-color: #000;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #000; /* Black background for immersion */
             overflow: hidden;
         }
 
-        /* The game container wraps the player */
+        /* This container tells Ruffle to be as big as possible 
+           without cutting off the edges of the game */
         #ruffle-container {
-            width: 100%;
-            height: 100%;
-            max-width: 1000px; /* Original game width */
-            max-height: 572px;  /* Original game height */
+            width: 100vw; 
+            height: 100vh;
+            max-width: 100%;
+            max-height: 100%;
             display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        #ruffle-container player {
+        /* Target the actual Ruffle player element */
+        #ruffle-container ruffle-player {
             width: 100%;
             height: 100%;
+            /* Isaac's native ratio is roughly 1.75:1 */
+            aspect-ratio: 1000 / 572; 
         }
     </style>
 </head>
@@ -48,12 +57,12 @@
             
             player.load({
                 url: "https://trapjawws.github.io/josh/The%20Binding%20of%20Isaac.swf",
-                // This helps the game capture keyboard input immediately
                 allowScriptAccess: true,
-                letterbox: "on"
+                // "fill" makes it take up the container space we defined in CSS
+                scale: "showAll", 
+                quality: "high"
             });
 
-            // Auto-focus the player so keys work instantly
             player.focus();
         });
     </script>
