@@ -3,96 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>The Binding of Isaac - Lite</title>
-    <link rel="stylesheet" type="text/css" href="https://tboi.com/assets/main.css">
-    
+    <title>Isaac Mobile</title>
     <style>
-        /* This centers everything on the page and removes scrollbars */
         body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center; /* Centers vertically */
-            align-items: center;     /* Centers horizontally */
-            background-color: #111;  /* Dark background */
-            overflow: hidden;        /* Prevents accidental scrolling */
+            margin: 0; padding: 0; width: 100%; height: 100%;
+            display: flex; flex-direction: column;
+            justify-content: center; align-items: center;
+            background-color: #1a1a1a; overflow: hidden;
+            font-family: sans-serif;
         }
 
-        #gameParent {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            max-width: 1000px;
-        }
-
-        /* The game container */
         #ruffle-container {
             width: 100%;
+            max-width: 900px;
             aspect-ratio: 1000 / 572;
             background: #000;
-            box-shadow: 0 0 50px rgba(0,0,0,0.5);
         }
 
-        /* Mobile Controls Styling */
-        .mobile-ui {
-            display: none;
-            width: 100%;
-            justify-content: space-around;
-            padding: 20px 0;
+        .controls-container {
+            display: none; /* Hidden on desktop */
+            width: 95%;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
         }
 
-        @media (pointer: coarse) {
-            .mobile-ui { display: flex; }
-        }
+        @media (pointer: coarse) { .controls-container { display: flex; } }
 
         .d-pad {
             display: grid;
-            grid-template-columns: repeat(3, 65px);
+            grid-template-columns: repeat(3, 60px);
             gap: 10px;
         }
 
-        .ctrl-btn {
-            width: 65px;
-            height: 65px;
-            background: rgba(255, 255, 255, 0.1);
-            border: 2px solid #555;
-            color: white;
-            border-radius: 12px;
-            font-weight: bold;
-            font-family: 'Open Sans', sans-serif;
-            touch-action: none;
-            user-select: none;
+        .center-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
         }
 
-        .ctrl-btn:active {
-            background: rgba(255, 255, 255, 0.3);
+        .ctrl-btn {
+            width: 60px; height: 60px;
+            background: rgba(255, 255, 255, 0.15);
+            border: 2px solid #888;
+            color: white; border-radius: 12px;
+            font-weight: bold; font-size: 18px;
+            touch-action: none; user-select: none;
         }
+
+        .wide-btn { width: 100px; height: 50px; border-radius: 25px; }
+        .ctrl-btn:active { background: rgba(255, 255, 255, 0.5); }
     </style>
 </head>
-
 <body>
 
-    <div id="gameParent">
-        <div id="ruffle-container"></div>
+    <div id="ruffle-container"></div>
 
-        <div class="mobile-ui">
-            <div class="d-pad">
-                <div></div><button class="ctrl-btn" id="btn-w">W</button><div></div>
-                <button class="ctrl-btn" id="btn-a">A</button>
-                <button class="ctrl-btn" id="btn-s">S</button>
-                <button class="ctrl-btn" id="btn-d">D</button>
-            </div>
+    <div class="controls-container">
+        <div class="d-pad">
+            <div></div><button class="ctrl-btn" id="move-up">W</button><div></div>
+            <button class="ctrl-btn" id="move-left">A</button>
+            <button class="ctrl-btn" id="move-down">S</button>
+            <button class="ctrl-btn" id="move-right">D</button>
+        </div>
 
-            <div class="d-pad">
-                <div></div><button class="ctrl-btn" id="btn-up">↑</button><div></div>
-                <button class="ctrl-btn" id="btn-left">←</button>
-                <button class="ctrl-btn" id="btn-down">↓</button>
-                <button class="ctrl-btn" id="btn-right">→</button>
-            </div>
+        <div class="center-buttons">
+            <button class="ctrl-btn wide-btn" id="btn-space">SPACE</button>
+            <button class="ctrl-btn wide-btn" id="btn-shift">SHIFT</button>
+        </div>
+
+        <div class="d-pad">
+            <div></div><button class="ctrl-btn" id="shoot-up">↑</button><div></div>
+            <button class="ctrl-btn" id="shoot-left">←</button>
+            <button class="ctrl-btn" id="shoot-down">↓</button>
+            <button class="ctrl-btn" id="shoot-right">→</button>
         </div>
     </div>
 
@@ -101,45 +85,43 @@
         const ruffle = window.RufflePlayer.newest();
         const player = ruffle.createPlayer();
         document.getElementById("ruffle-container").appendChild(player);
-        
         player.load("https://trapjawws.github.io/josh/The%20Binding%20of%20Isaac.swf");
 
-        // Input Simulation
-        function simulateKey(keyCode, keyName, type) {
+        // The Fix: Map the UI ID to the KeyCode the game actually wants
+        const buttonMap = {
+            'move-up':    { code: 38, name: 'ArrowUp' },
+            'move-down':  { code: 40, name: 'ArrowDown' },
+            'move-left':  { code: 37, name: 'ArrowLeft' },
+            'move-right': { code: 39, name: 'ArrowRight' },
+            'shoot-up':   { code: 38, name: 'ArrowUp' },
+            'shoot-down': { code: 40, name: 'ArrowDown' },
+            'shoot-left': { code: 37, name: 'ArrowLeft' },
+            'shoot-right':{ code: 39, name: 'ArrowRight' },
+            'btn-space':  { code: 32, name: ' ' },
+            'btn-shift':  { code: 16, name: 'Shift' }
+        };
+
+        function triggerKey(data, type) {
             const event = new KeyboardEvent(type, {
-                key: keyName,
-                code: keyName,
-                keyCode: keyCode,
-                which: keyCode,
+                key: data.name,
+                code: data.name,
+                keyCode: data.code,
+                which: data.code,
                 bubbles: true
             });
             window.dispatchEvent(event);
             player.dispatchEvent(event);
         }
 
-        const buttonMap = {
-            'btn-w': { code: 87, name: 'w' },
-            'btn-a': { code: 65, name: 'a' },
-            'btn-s': { code: 83, name: 's' },
-            'btn-d': { code: 68, name: 'd' },
-            'btn-up': { code: 38, name: 'ArrowUp' },
-            'btn-down': { code: 40, name: 'ArrowDown' },
-            'btn-left': { code: 37, name: 'ArrowLeft' },
-            'btn-right': { code: 39, name: 'ArrowRight' }
-        };
-
         Object.keys(buttonMap).forEach(id => {
             const btn = document.getElementById(id);
-            const data = buttonMap[id];
-
             btn.addEventListener('touchstart', (e) => {
                 e.preventDefault();
-                simulateKey(data.code, data.name, 'keydown');
+                triggerKey(buttonMap[id], 'keydown');
             });
-
             btn.addEventListener('touchend', (e) => {
                 e.preventDefault();
-                simulateKey(data.code, data.name, 'keyup');
+                triggerKey(buttonMap[id], 'keyup');
             });
         });
     </script>
