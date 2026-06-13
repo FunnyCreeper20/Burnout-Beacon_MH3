@@ -115,7 +115,7 @@ const statusBands = [
 ];
 
 // Score at or above this value will show a prominent "talk to someone" warning.
-const TALK_THRESHOLD = 79; // configurable: set to desired threshold (0-100)
+const TALK_THRESHOLD = 90; // configurable: set to desired threshold (0-100)
 
 // Finds the correct wellness status for the current pressure score.
 function getStatus(score) {
