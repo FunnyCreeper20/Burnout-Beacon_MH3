@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burnout Beacon | Home</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='10' y1='54' x2='54' y2='10' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230f766e'/%3E%3Cstop offset='0.48' stop-color='%232563eb'/%3E%3Cstop offset='1' stop-color='%23ef6f61'/%3E%3C/linearGradient%3E%3CradialGradient id='r' cx='48' cy='16' r='30' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23ffffff' stop-opacity='0.35'/%3E%3Cstop offset='1' stop-color='%23ffffff' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Crect width='64' height='64' rx='14' fill='url(%23r)'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial, Helvetica, sans-serif' font-size='34' font-weight='900' fill='white'%3EB%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav" aria-label="Primary navigation">
+            <a class="brand" href="index.html" aria-label="Burnout Beacon home">
+                <span class="mark" aria-hidden="true">B</span>
+                <span>Burnout Beacon</span>
+            </a>
+            <div class="nav-links">
+                <a class="active" href="index.html">Home</a>
+                <a href="check.html">Wellness Check</a>
+                <a href="project.html">Project Reasoning</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-grid">
+                <div>
+                    <p class="eyebrow"><span class="pulse" aria-hidden="true"></span>Privacy-first student wellness</p>
+                    <h1>Burnout Beacon</h1>
+                    <p class="tagline">Predictive Maintenance for Student Well-Being</p>
+                    <p class="hero-copy">
+                        Burnout Beacon helps students recognize meaningful changes in their routines before stress
+                        becomes overwhelming, providing early awareness, actionable recommendations, and community
+                        support when it matters most.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button primary" href="check.html">Try the Wellness Check</a>
+                        <a class="button" href="project.html">See the Project Logic</a>
+                    </div>
+                </div>
+
+                <aside class="dashboard" aria-label="Burnout Beacon dashboard preview">
+                    <div class="dashboard-top">
+                        <span class="dashboard-title">Wellness Status</span>
+                        <span class="status-pill">Under Pressure</span>
+                    </div>
+                    <div class="dashboard-body">
+                        <div class="gauge">
+                            <div class="meter" aria-label="Pressure score 62 percent">
+                                <strong>62</strong>
+                            </div>
+                            <div class="metric-list">
+                                <div class="metric">
+                                    <span>Sleep consistency</span>
+                                    <strong>-18%</strong>
+                                </div>
+                                <div class="metric">
+                                    <span>Academic workload</span>
+                                    <strong>High</strong>
+                                </div>
+                                <div class="metric">
+                                    <span>Energy check-ins</span>
+                                    <strong>Declining</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="explain">
+                            <strong>Status changed because</strong>
+                            Sleep consistency dropped, workload is increasing next week, and energy check-ins declined.
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-inner split">
+                <div class="section-head">
+                    <p class="section-kicker">The Problem</p>
+                    <h2>Students rarely notice burnout while it is building.</h2>
+                </div>
+                <div class="statement">
+                    <h3>Most tools arrive too late.</h3>
+                    <p>
+                        Academic pressure, poor sleep, packed schedules, and reduced recovery often build gradually.
+                        By the time students realize they are struggling, burnout and declining performance may already
+                        be affecting daily life. Burnout Beacon is designed to surface those warning signs earlier.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="theme-band">
+            <div class="section-inner">
+                <div class="section-head">
+                    <p class="section-kicker">The Solution</p>
+                    <h2>A personal check engine light for student well-being.</h2>
+                    <p>
+                        Instead of diagnosing conditions or comparing students to generic averages, the platform
+                        learns a student's baseline and explains meaningful changes in sleep, workload, and check-ins.
+                    </p>
+                </div>
+                <div class="statuses">
+                    <div class="status stable">
+                        <h3>Stable</h3>
+                        <p>Your patterns look close to your normal baseline.</p>
+                    </div>
+                    <div class="status pressure">
+                        <h3>Under Pressure</h3>
+                        <p>Early warning signs suggest planning and recovery would help.</p>
+                    </div>
+                    <div class="status strained">
+                        <h3>Strained</h3>
+                        <p>Multiple signals are moving in a concerning direction.</p>
+                    </div>
+                    <div class="status recovery">
+                        <h3>Recovery Mode</h3>
+                        <p>Support, resources, and rest should be prioritized now.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-inner">
+                <div class="section-head">
+                    <p class="section-kicker">Core Features</p>
+                    <h2>Awareness, explanations, and support pathways.</h2>
+                </div>
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <div class="icon" aria-hidden="true">01</div>
+                        <h3>Personal Baseline Engine</h3>
+                        <p>Detects changes relative to the individual instead of using generic population comparisons.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="icon" aria-hidden="true">02</div>
+                        <h3>Pressure Forecasting</h3>
+                        <p>Uses calendars, deadlines, and workload indicators to identify high-pressure periods.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="icon" aria-hidden="true">03</div>
+                        <h3>Beacon Circles</h3>
+                        <p>Connects students with study groups, accountability partners, clubs, and peer-support options.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="section-inner">
+            <strong>Burnout Beacon</strong>
+            <span>Awareness and prevention before crisis.</span>
+        </div>
+    </footer>
+</body>
+</html>
