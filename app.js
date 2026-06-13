@@ -114,6 +114,9 @@ const statusBands = [
     { max: 100, label: "Recovery Mode", color: "#2563eb" }
 ];
 
+// Score at or above this value will show a prominent "talk to someone" warning.
+const TALK_THRESHOLD = 79; // configurable: set to desired threshold (0-100)
+
 // Finds the correct wellness status for the current pressure score.
 function getStatus(score) {
     return statusBands.find((band) => score <= band.max) || statusBands[statusBands.length - 1];
@@ -500,6 +503,30 @@ function showResults() {
     addListItems(outputs.reasons, reasons);
     addListItems(outputs.recommendations, recommendations.slice(0, 4));
     updateSupport(support);
+
+    // Show a safety / outreach warning if the numeric score crosses the TALK_THRESHOLD.
+    try {
+        let warning = resultScreen.querySelector('#talkWarning');
+        if (!warning) {
+            warning = document.createElement('div');
+            warning.id = 'talkWarning';
+            warning.className = 'safety-warning hidden';
+            // Insert warning before the answer summary so it's visible near the top of results.
+            outputs.summary.parentNode.insertBefore(warning, outputs.summary);
+        }
+
+        if (score >= TALK_THRESHOLD) {
+            warning.innerHTML = `
+                <strong>Consider talking to someone</strong>
+                <p>If your score is ${score}, you may be experiencing elevated pressure. Consider reaching out to a trusted friend, family member, mentor, or your campus counseling center for support. If you feel you may harm yourself or others, contact emergency services immediately.</p>
+            `;
+            warning.classList.remove('hidden');
+        } else {
+            warning.classList.add('hidden');
+        }
+    } catch (e) {
+        console.warn('Could not render talk-warning', e);
+    }
 
     // Record this submission into a local 'prev.csv' (stored in localStorage)
     try {
